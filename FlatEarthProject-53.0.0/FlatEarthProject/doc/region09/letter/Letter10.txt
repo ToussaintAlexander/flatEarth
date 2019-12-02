@@ -1,0 +1,20 @@
+Subsection 1.0 - first
+
+	Business Overview Field
+
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+	Processor Impact List
+		ID           		NUMBER(4)    	   
+		PROCESSOR		VARCHAR2(30)		Acquirer
+		IMPACT           	NUMBER(1)		Issuer  
+
+
+	System Impact List
+   		ID           		NUMBER(4)
+		SYSTEM_NAME		VARCHAR2(30)
+		TESTING_AVAILABLE	NUMBER(1)
+		TESTING_REQUIRED	NUMBER(1)
+		ACTIVATION_REQUIRED	NUMBER(1)

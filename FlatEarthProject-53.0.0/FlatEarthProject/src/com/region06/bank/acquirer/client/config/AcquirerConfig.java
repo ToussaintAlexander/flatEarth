@@ -1,0 +1,30 @@
+package com.region06.bank.acquirer.client.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.region06.bank.acquirer.client.service.AcquirerService;
+import com.region06.bank.acquirer.client.service.AcquirerServiceImpl;
+
+/**************************************************************************
+ * Spring JavaConfig
+ * 
+ * The central artifact in Spring JavaConfig is the @Configuration-annotated 
+ * class. These classes consist principally of @Bean-annotated methods that 
+ * define instantiation, configuration, and initialization logic for objects 
+ * that will be managed by the Spring IoC container.
+ * 
+ * @Configuration
+ * 
+ * Annotating a class with the @Configuration indicates that the class may 
+ * be used by JavaConfig as a source of bean definitions.
+ **************************************************************************
+ */
+
+@Configuration
+public class AcquirerConfig {
+	@Bean
+	public AcquirerService getSampleService() {
+		return new AcquirerServiceImpl();
+	}
+}

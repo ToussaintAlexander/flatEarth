@@ -1,0 +1,99 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>  
+<%@ taglib prefix="c"   uri="http://java.sun.com/jstl/core_rt"	     %>  
+
+		<h1>Edit Product</h1>
+       <form:form method="POST" action="/FlatEarthProject/acquirerEditFormJSPPostAction">  
+      	<table >  
+      	<tr>
+      	<td></td>  
+         <td><form:hidden  path="id" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Product Code : </td> 
+          <td><form:input path="code"  /></td>
+         </tr> 
+          
+         <tr>  
+          <td>Sequence :</td>  
+          <td><form:input path="seq" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Product Name :</td>  
+          <td><form:input path="productName" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Description :</td>  
+          <td><form:input path="description" /></td>
+         </tr>     
+              
+         <tr>  
+          <td>Supplier Id :</td>  
+          <td><form:input path="supplier" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Category Id :</td>  
+          <td><form:input path="category" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Unit Size :</td>  
+          <td><form:input path="unitSize" /></td>
+         </tr> 
+         
+         <tr>  
+          <td>Unit Price :</td>  
+          <td><form:input path="unitPrice" /></td>
+         </tr> 
+
+         <tr>  
+          <td>Discount Percentage :</td>  
+          <td><form:input path="discount" /></td>
+         </tr> 
+                
+         <tr>  
+          <td>Unit Weight :</td>  
+          <td><form:input path="unitWeight" /></td>
+         </tr> 
+                
+        
+         <tr>  
+          <td>Picture Id :</td>  
+          <td><form:input path="picture" /></td>
+         </tr> 
+        
+         <tr>  
+          <td>Product Notes :</td>  
+          <td><form:input path="notes" /></td>
+         </tr> 
+        
+         <tr>  
+          <td>Create User :</td>  
+          <td><form:input path="createUser" /></td>
+         </tr> 
+ 
+         <tr>  
+          <td>Create Timestamp :</td>  
+          <td><form:input path="createTimestamp" /></td>
+         </tr> 
+                                        
+         <tr>  
+          <td>Modify User :</td>  
+          <td><form:input path="modifyUser" /></td>
+         </tr> 
+                  
+         <tr>  
+          <td>Modify Timestamp :</td>  
+          <td><form:input path="modifyTimestamp" /></td>
+         </tr> 
+         
+         <tr>  
+          <td> </td>  
+          <td><input type="submit" value="Edit Save" /></td>  
+         </tr>  
+         
+        </table>  
+       </form:form>  

@@ -1,0 +1,12 @@
+delete from DUAL_RULE_HEADER_TABLE;
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 0, 0, 0, 0, 1, 1, 2, 3, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 3, 0, 1, 0, 0, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 1, 0, 0, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 2, 3, 1, 1, 1, 1, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 2, 0, 0, 2, 1, 1, 2, 3, 2, 0, 2, 2, 2, 0, 0, 2, 1, 1, 2, 3, 2, 0, 2, 2, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 2, 1, 0, 3, 1, 1, 2, 3, 2, 1, 3, 3, 2, 1, 0, 3, 1, 1, 2, 3, 2, 1, 3, 3, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 2, 2, 0, 4, 1, 1, 2, 3, 2, 2, 4, 4, 2, 2, 0, 4, 1, 1, 2, 3, 2, 2, 4, 4, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 3, 0, 0, 5, 1, 1, 2, 3, 3, 0, 5, 5, 3, 0, 0, 5, 1, 1, 2, 3, 3, 0, 5, 5, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 3, 1, 0, 6, 1, 1, 2, 3, 3, 1, 6, 6, 3, 1, 0, 6, 1, 1, 2, 3, 3, 1, 6, 6, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 3, 2, 0, 7, 1, 1, 2, 3, 3, 2, 7, 7, 3, 2, 0, 7, 1, 1, 2, 3, 3, 2, 7, 7, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 4, 0, 0, 8, 1, 1, 2, 3, 4, 0, 8, 8, 4, 0, 0, 8, 1, 1, 2, 3, 4, 0, 8, 8, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into DUAL_RULE_HEADER_TABLE values ( 0, 4, 0, 0, 9, 1, 1, 2, 3, 4, 0, 9, 9, 4, 0, 0, 9, 1, 1, 2, 3, 4, 0, 9, 9, 'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+commit;

@@ -1,0 +1,68 @@
+<!-- HEADER -->
+
+<jsp:include page="/include/pageHeader/pageHeader.jsp" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Main Menu</title>
+
+</head>
+
+<body>
+
+	<div id="container" style="width: 650px">
+
+		<!-- TOP BORDER -->
+
+		<div id="header" style="background-color: blue;">
+			<h1 style="margin-bottom: 0;">Main Menu</h1>
+		</div>
+
+		<!-- CONTENT BODY -->
+
+		<div id="content"
+			style="background-color: silver; height: 650px; width: 650px; float: left;">
+
+				<!-- SCREEN DATE -->	
+				
+				<div style="position: absolute; top:70px; left:370px; width:300px; height:25px">							
+					<b>Date:</b> <%= new java.util.Date() %>
+				</div>
+				
+				<!-- FLATEARTH LOGO -->
+
+				<jsp:include page="/include/pageHeader/hourglass2.jsp" />
+
+				<!-- SCREEN DISPLAY -->
+
+				<div style="position: absolute; top:250px; left:200px; width:700px; height:25px">
+ 					
+  					<h1>Main Menu</h1>
+
+					<a href="cardholderMenu">Cardholder Menu</a>
+					<br></br> 
+					<a href="bankMenu">Bank Menu</a>
+					<br></br> 
+					<a href="cardMenu">Card Menu</a>
+					<br></br> 
+					<a href="merchantMenu">Merchant Menu</a>
+					<br></br> 
+					<a href="processorMenu">Processor Menu</a>
+					<br></br> 
+					<a href="associationMenu">Association Menu</a>
+					<br></br> 
+					<a href="systemMenu">System Menu</a>
+ 					
+				</div>
+
+		</div>
+
+		<!-- INCLUDE COPYRIGHT -->
+
+		<jsp:include page="/include/pageFooter/copyright.jsp" />
+		
+	</div>
+
+</body>
+</html>

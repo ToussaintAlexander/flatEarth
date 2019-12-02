@@ -1,0 +1,12 @@
+delete from ACRONYM_TABLE;
+insert into ACRONYM_TABLE values ( 0, 1, 'AI' ,'Artificial Intelligence'      ,'Artificial Intelligence Textbook' 		,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 2, 'BD' ,'Big Data' 			         ,'Big Data Textbook' 						,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 3, 'CV' ,'Computer Vision' 	         ,'Computer Vision Textbook' 				,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 4, 'LNN','Learning Neural Networks'    ,'Learning Neural Networks Textbook' 		,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 5, 'ML' ,'Machine Learning'            ,'Machine Learning Textbook' 				,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 6, 'MO' ,'Mathematical Optimization'   ,'Mathematical Optimization Textbook' 		,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 7, 'NLP','Natural Language Processing' ,'Natural Language Processing Textbook' 	,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 8, 'RL' ,'Reinforcement Learning'      ,'Reinforcement Learning Textbook' 		,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 9, 'SL' ,'Supervised Learning'         ,'Supervised Learning Textbook' 			,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACRONYM_TABLE values ( 0, 10, 'SR','Speech Recognition'         ,'Speech Recognition Textbook' 			,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

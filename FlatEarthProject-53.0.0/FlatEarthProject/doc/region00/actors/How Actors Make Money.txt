@@ -1,0 +1,22 @@
+/*
+
+Interchange fee. ... In a credit card or debit card transaction, the 
+card-issuing bank in a payment transaction deducts the interchange fee 
+from the amount it pays the acquiring bank that handles a credit or 
+debit card transaction for a merchant.
+ 
+Visa and Mastercard typically make 0.11% per transaction when a card 
+is swiped. The rest goes to the acquirer bank (merchant's bank) and 
+issuer (shopper's bank) as mentioned in the answers below. More % goes 
+to the shopper's bank since they'll lose money if the shopper defaults 
+on their credit card payment.
+ 
+Interchange fees are assessed net of refunds and chargebacks, and most 
+are two parts consisting of a percentage and a transaction fee. For example, 
+1.51% plus $0.10 is the current Visa interchange fee for a swiped consumer 
+credit card.
+ 
+TS2® is a state-of-the-art card processing system from Total System Services
+(TSYS®) used to manage credit card portfolios.
+ 
+ */

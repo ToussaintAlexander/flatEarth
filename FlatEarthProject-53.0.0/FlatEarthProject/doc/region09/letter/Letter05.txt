@@ -1,0 +1,18 @@
+Subsection 1.0 - first
+
+	Business Overview Field
+
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+	Processor Impact List
+		ID           		NUMBER(4)    	   
+		PROCESSOR		VARCHAR2(30)		Acquirer
+		IMPACT           	NUMBER(1)		Issuer  
+
+	Platform Impact List 					Agriculture, Forestry and Fishing
+		ID           		NUMBER(4) 		Finance, Insurance and Real Estate
+		PLATFORM		VARCHAR2(30)		Renewable Energy Resources
+		IMPACT           	NUMBER(1) 		Travel and Hospitality Services
+								Computer Hardware/Software Manufacturing

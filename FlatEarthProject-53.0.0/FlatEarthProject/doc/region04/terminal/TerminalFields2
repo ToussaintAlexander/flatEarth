@@ -1,0 +1,621 @@
+package com.external.merchant.terminal.model;
+
+import java.util.Date;
+
+public class TerminalBean {
+
+	private int id;
+	
+	// Indicates the currency code of the transaction according to [ISO 4217]
+	
+	private int transactionCurrencyCode;		// 5F2A	n3  
+	
+	// Identifies the decimal point position from the right of the transaction 
+	// amount according to ISO 4217
+	
+	private int transactionCurrencyExponent;	// 5F36	n 1
+	
+	// Indicates the type of account selected on the terminal, coded as specified 
+	// in Annex G
+	
+	private int accountType;					// 5F56	n 2
+	
+	// Authorized amount of the transaction (excluding adjustments)
+	
+	//private int amountAuthorized;			// 81	4	4	binary 0001 0000
+	
+	// Indicates the transaction disposition of the transaction received from the 
+	// issuer for online authorizations.
+	
+	private String authorizationResponseCode;	// 8A	an 2	(ARC)	Issuer/Terminal
+	
+	private String terminalVerificationResults;	//	95	6	6	Always	'00 00 00 00 00'	(TVR)
+	
+	private int transactionCertificateHashValue;	//	98	binary	20	20		(TC)
+	
+	// Local date that the transaction was authorized
+	
+	private Date transactionDate;			//	9A	n 6	(YY MM DD)	3	3	
+	
+	// Indicates the functions performed in a transaction
+	
+	private int transactionStatusInformation;	//	9B	binary	2	2	
+	
+	// Indicates the type of financial transaction, represented by the first 
+	// two digits of the ISO 8583:1993 Processing Code.
+	
+	private int transactionType;				// 9C	n 2	
+	
+	// Uniquely identifies the acquirer within each payment system
+	
+	private int acquirerIdentifier;		// 9F01	n 6 - 11	
+	
+	// Authorized amount of the transaction (including Amount, Other and 
+	// excluding adjustments).
+	
+	// Secondary amount associated with the transaction representing a cash back amount. 
+	// This amount is expressed with implicit decimal point corresponding to the minor 
+	// unit of currency as defined by [ISO 4217] (for example the 6 bytes '00 00 00 00 01 23' 
+	// represent GBP 1.23 when the currency code is '826').
+	
+	private int amountAuthorized;		// 9F02	n 12		6	6
+	
+	private int otherAmount;		// 	9F03	n 12 	6	6	'00 00 00 00 00 00'
+	
+	//private int otherAmount;		// 	9F04	n 12 	6	6	'00 00 00 00 00 00'
+	
+	// Identifies the application as described in ISO/IEC 7816-5	binary 40 - 128 	5 - 16
+	
+	private int applicationIdentifierTerminal;	// 9F06
+	
+	// Version number assigned by the payment system for the Kernel application
+	
+	private int applicationVersionNumber;	// 9F09		binary	2	2
+	
+	// Version number assigned by the payment system for the Kernel application
+	
+	private int merchantCategoryCode;		// 9F15		n 4		2	2
+	
+	// Classifies the type of business being done by the merchant, represented according 
+	// to ISO 8583:1993 for Card Acceptor Business Code
+	
+	private String merchantIdentifier;		//	9F16	ans 15	15	15
+	
+	// When concatenated with the Acquirer Identifier, uniquely identifies a given merchant
+	
+	private int terminalCountryCode;		//	9F1A	n 3		2	2
+	
+	// Indicates the country of the terminal, represented according to ISO 3166
+	
+	private int terminalFloorLimit;			//	9F1B	binary 32		4	4
+	
+	// Indicates the floor limit in the terminal in conjunction with the AID
+	
+	private String terminalIdentification;	// 9F1C		an 8	8	8
+	
+	// Designates the unique location of a Terminal at a merchant
+	
+	private int terminalRiskMangementData;	//	9F1D	binary	1	8
+	
+	// Application-specific value used by the card for risk management purposes
+	
+	private String interfaceDeviceSerialNumber;	//	9F1E	an 8	8	8	(IFD)
+	
+	// Unique and permanent serial number assigned to the IFD by the manufacturer
+	
+	private int transactionTime;	//	9F21	n 6	(HH MM SS)
+	
+	// Local time at which the transaction was performed.
+	
+	private int certificationAuthorityPublicKeyIndex;	// 9F22	binary 8	1	1
+	
+	// Identifies the Certificate Authority's public key in conjunction with the 
+	// RID for use in offline static and dynamic data authentication.
+	
+	private int terminalCapabiities;	// 9F33	binary	3	3
+	
+	// Indicates the card data input, CVM, and security capabilities of the Terminal 
+	// and Reader. The CVM capability (Byte 2) is instantiated with values depending 
+	// on the transaction amount. The Terminal Capabilities is coded according to 
+	// Annex A.2 of [EMV Book 4].
+	
+	private int cardholderVerfiicationMethodMethodResults;	//	9F34	binary	3	3
+	
+	// Indicates the results of the last CVM performed
+	
+	private int terminalType;	//9F35	n 2	
+	
+	// Indicates the environment of the terminal, its communications capability, and its 
+	// operational control
+	
+	private int applicationTransactionCounter;	// 9F36	binary	2	2
+	
+	// Counter maintained by the application in the card (incrementing the ATC is 
+	// managed by the card).
+	
+	private int unpredictableNumber;	// 9F37	binary	4	4
+	
+	// Value to provide variability and uniqueness to the generation of a cryptogram
+	
+	private int pointOfServiceEntryMode;	// 9F39	n 2 	1	1
+	
+	// Indicates the method by which the PAN was entered, according to the first 
+	// two digits of the ISO 8583:1987 POS Entry Mode
+	
+	private int amountReferenceCurrency;	//9F3A	 binary	4	4
+	
+	// Authorized amount expressed in the reference currency
+	
+	private int currencyCode;	// 9F3B	n 3	
+	
+	// Code defining the common currency used by the terminal in case the Transaction 
+	// Currency Code is different from the Application Currency Code
+	
+	private int currencyExponent;	//	9F3C	n 1		1	1
+	
+	// Indicates the implied position of the decimal point from the right of the transaction 
+	// amount, with the Transaction Reference Currency Code represented according to ISO 4217
+	
+	private int additionalTerminalCapabilities;	//	9F3D	n 1		5	5
+	
+	// Indicates the data input and output capabilities of the Terminal and Reader. The 
+	// Additional Terminal Capabilities is coded according to Annex A.3 of [EMV Book 4].
+	
+	private int transactionSequenceCounter;	//	9F40	n 4 - 8 	binary	2	4
+	
+	// Counter maintained by the terminal that is incremented by one for each transaction
+	
+	private String merchantNameAndLocation;	//	9F4E	ans
+	
+	// Indicates the name and location of the merchant
+	
+	private int applicationProgramIdentitifier;	//	9F5A	binary	1	16
+	
+	// Proprietary data element used by the device during Dynamic Reader Limit processing 
+	// to determine the Reader Limit Set to apply for the transaction. EMV mode readers that 
+	// support Dynamic Reader Limits (DRL) functionality support four or more Application 
+	// Program Identifiers, each corresponding to a Reader Limit Set.
+	
+	private int issuerScriptResults;		// 9F5B	binary
+	
+	// Indicates the results of Issuer Script processing. When the reader/terminal transmits 
+	// this data element to the acquirer, in this version of Kernel 3, it is acceptable that 
+	// only byte 1 is transmitted, although it is preferable for all five bytes to be 
+	// transmitted.
+	
+	private int dsdol;						// 9F5B	binary
+	
+	// A data object in the Card that provides the Kernel with a list of data objects that 
+	// must be passed to the Card in the data field of the GENERATE AC command after the 
+	// CDOL1 Related Data. An example of value for DSDOL is 'DF6008DF6108DF6201DF63A0', 
+	// representing TLDS Input (Card) TLDS Digest H TLDS ODS Info TLDS ODS Term. The Kernel 
+	// must not presume that this is a given though, as the sequence and presence of data 
+	// objects can vary. The presence of TL DS ODS Info is mandated and the processing of the 
+	// last TL entry in DSDOL is different from normal TL processing as described in 
+	// section 4.1.4.
+	
+	private int terminalTransactionQualifiers;	//	9F66	binary 32	4	4
+	
+	// Indicates reader capabilities, requirements, and preferences to the card. TTQ byte 2 bits 8-7 
+	// are transient values, and reset to zero at the beginning of the transaction. All other TTQ 
+	// bits are static values, and not modified based on transaction conditions. TTQ byte 3 bit 7 
+	// shall be set by the acquirer-merchant to 1b.
+	
+	private int kernel4ReaderCapbilities;	// 9F6D	n 2	1	1
+	
+	// A proprietary data element with bits 8, 7, and 4 only used to indicate a terminal's capability 
+	// to support Kernel 4 mag-stripe or EMV contactless. This data element is OR'd with Terminal Type, 
+	// Tag '9F35', resulting in a modified Tag '9F35', which is passed to the card when requested.
+	
+	private int formFactorIndicator;	//	9F6E	binary 32	4	4
+	
+	// Indicates the form factor of the consumer payment device and the type of contactless interface 
+	// over which the transaction was conducted. This information is made available to the issuer host.
+	
+	private int VLPTerminalTransactionLimit;	// 9F7C	H
+	
+	private int parentENCTerminalActionCodeDefault;		//	DF56	H
+	
+	private int terminalActionCodeDecline;		// DF57	H
+	
+	private String createUser;
+	private Timestamp createTimestamp;
+	private String modifyUser;
+	private Timestamp modifyTimestamp;
+
+	public TerminalBean () {}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getTransactionCurrencyCode() {
+		return transactionCurrencyCode;
+	}
+
+	public void setTransactionCurrencyCode(int transactionCurrencyCode) {
+		this.transactionCurrencyCode = transactionCurrencyCode;
+	}
+
+	public int getTransactionCurrencyExponent() {
+		return transactionCurrencyExponent;
+	}
+
+	public void setTransactionCurrencyExponent(int transactionCurrencyExponent) {
+		this.transactionCurrencyExponent = transactionCurrencyExponent;
+	}
+
+	public int getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(int accountType) {
+		this.accountType = accountType;
+	}
+
+	public String getAuthorizationResponseCode() {
+		return authorizationResponseCode;
+	}
+
+	public void setAuthorizationResponseCode(String authorizationResponseCode) {
+		this.authorizationResponseCode = authorizationResponseCode;
+	}
+
+	public String getTerminalVerificationResults() {
+		return terminalVerificationResults;
+	}
+
+	public void setTerminalVerificationResults(String terminalVerificationResults) {
+		this.terminalVerificationResults = terminalVerificationResults;
+	}
+
+	public int getTransactionCertificateHashValue() {
+		return transactionCertificateHashValue;
+	}
+
+	public void setTransactionCertificateHashValue(int transactionCertificateHashValue) {
+		this.transactionCertificateHashValue = transactionCertificateHashValue;
+	}
+
+	public Date getTransactionDate() {
+		return transactionDate;
+	}
+
+	public void setTransactionDate(Date transactionDate) {
+		this.transactionDate = transactionDate;
+	}
+
+	public int getTransactionStatusInformation() {
+		return transactionStatusInformation;
+	}
+
+	public void setTransactionStatusInformation(int transactionStatusInformation) {
+		this.transactionStatusInformation = transactionStatusInformation;
+	}
+
+	public int getTransactionType() {
+		return transactionType;
+	}
+
+	public void setTransactionType(int transactionType) {
+		this.transactionType = transactionType;
+	}
+
+	public int getAcquirerIdentifier() {
+		return acquirerIdentifier;
+	}
+
+	public void setAcquirerIdentifier(int acquirerIdentifier) {
+		this.acquirerIdentifier = acquirerIdentifier;
+	}
+
+	public int getAmountAuthorized() {
+		return amountAuthorized;
+	}
+
+	public void setAmountAuthorized(int amountAuthorized) {
+		this.amountAuthorized = amountAuthorized;
+	}
+
+	public int getOtherAmount() {
+		return otherAmount;
+	}
+
+	public void setOtherAmount(int otherAmount) {
+		this.otherAmount = otherAmount;
+	}
+
+	public int getApplicationIdentifierTerminal() {
+		return applicationIdentifierTerminal;
+	}
+
+	public void setApplicationIdentifierTerminal(int applicationIdentifierTerminal) {
+		this.applicationIdentifierTerminal = applicationIdentifierTerminal;
+	}
+
+	public int getApplicationVersionNumber() {
+		return applicationVersionNumber;
+	}
+
+	public void setApplicationVersionNumber(int applicationVersionNumber) {
+		this.applicationVersionNumber = applicationVersionNumber;
+	}
+
+	public int getMerchantCategoryCode() {
+		return merchantCategoryCode;
+	}
+
+	public void setMerchantCategoryCode(int merchantCategoryCode) {
+		this.merchantCategoryCode = merchantCategoryCode;
+	}
+
+	public String getMerchantIdentifier() {
+		return merchantIdentifier;
+	}
+
+	public void setMerchantIdentifier(String merchantIdentifier) {
+		this.merchantIdentifier = merchantIdentifier;
+	}
+
+	public int getTerminalCountryCode() {
+		return terminalCountryCode;
+	}
+
+	public void setTerminalCountryCode(int terminalCountryCode) {
+		this.terminalCountryCode = terminalCountryCode;
+	}
+
+	public int getTerminalFloorLimit() {
+		return terminalFloorLimit;
+	}
+
+	public void setTerminalFloorLimit(int terminalFloorLimit) {
+		this.terminalFloorLimit = terminalFloorLimit;
+	}
+
+	public String getTerminalIdentification() {
+		return terminalIdentification;
+	}
+
+	public void setTerminalIdentification(String terminalIdentification) {
+		this.terminalIdentification = terminalIdentification;
+	}
+
+	public int getTerminalRiskMangementData() {
+		return terminalRiskMangementData;
+	}
+
+	public void setTerminalRiskMangementData(int terminalRiskMangementData) {
+		this.terminalRiskMangementData = terminalRiskMangementData;
+	}
+
+	public String getInterfaceDeviceSerialNumber() {
+		return interfaceDeviceSerialNumber;
+	}
+
+	public void setInterfaceDeviceSerialNumber(String interfaceDeviceSerialNumber) {
+		this.interfaceDeviceSerialNumber = interfaceDeviceSerialNumber;
+	}
+
+	public int getTransactionTime() {
+		return transactionTime;
+	}
+
+	public void setTransactionTime(int transactionTime) {
+		this.transactionTime = transactionTime;
+	}
+
+	public int getCertificationAuthorityPublicKeyIndex() {
+		return certificationAuthorityPublicKeyIndex;
+	}
+
+	public void setCertificationAuthorityPublicKeyIndex(int certificationAuthorityPublicKeyIndex) {
+		this.certificationAuthorityPublicKeyIndex = certificationAuthorityPublicKeyIndex;
+	}
+
+	public int getTerminalCapabiities() {
+		return terminalCapabiities;
+	}
+
+	public void setTerminalCapabiities(int terminalCapabiities) {
+		this.terminalCapabiities = terminalCapabiities;
+	}
+
+	public int getCardholderVerfiicationMethodMethodResults() {
+		return cardholderVerfiicationMethodMethodResults;
+	}
+
+	public void setCardholderVerfiicationMethodMethodResults(int cardholderVerfiicationMethodMethodResults) {
+		this.cardholderVerfiicationMethodMethodResults = cardholderVerfiicationMethodMethodResults;
+	}
+
+	public int getTerminalType() {
+		return terminalType;
+	}
+
+	public void setTerminalType(int terminalType) {
+		this.terminalType = terminalType;
+	}
+
+	public int getApplicationTransactionCounter() {
+		return applicationTransactionCounter;
+	}
+
+	public void setApplicationTransactionCounter(int applicationTransactionCounter) {
+		this.applicationTransactionCounter = applicationTransactionCounter;
+	}
+
+	public int getUnpredictableNumber() {
+		return unpredictableNumber;
+	}
+
+	public void setUnpredictableNumber(int unpredictableNumber) {
+		this.unpredictableNumber = unpredictableNumber;
+	}
+
+	public int getPointOfServiceEntryMode() {
+		return pointOfServiceEntryMode;
+	}
+
+	public void setPointOfServiceEntryMode(int pointOfServiceEntryMode) {
+		this.pointOfServiceEntryMode = pointOfServiceEntryMode;
+	}
+
+	public int getAmountReferenceCurrency() {
+		return amountReferenceCurrency;
+	}
+
+	public void setAmountReferenceCurrency(int amountReferenceCurrency) {
+		this.amountReferenceCurrency = amountReferenceCurrency;
+	}
+
+	public int getCurrencyCode() {
+		return currencyCode;
+	}
+
+	public void setCurrencyCode(int currencyCode) {
+		this.currencyCode = currencyCode;
+	}
+
+	public int getCurrencyExponent() {
+		return currencyExponent;
+	}
+
+	public void setCurrencyExponent(int currencyExponent) {
+		this.currencyExponent = currencyExponent;
+	}
+
+	public int getAdditionalTerminalCapabilities() {
+		return additionalTerminalCapabilities;
+	}
+
+	public void setAdditionalTerminalCapabilities(int additionalTerminalCapabilities) {
+		this.additionalTerminalCapabilities = additionalTerminalCapabilities;
+	}
+
+	public int getTransactionSequenceCounter() {
+		return transactionSequenceCounter;
+	}
+
+	public void setTransactionSequenceCounter(int transactionSequenceCounter) {
+		this.transactionSequenceCounter = transactionSequenceCounter;
+	}
+
+	public String getMerchantNameAndLocation() {
+		return merchantNameAndLocation;
+	}
+
+	public void setMerchantNameAndLocation(String merchantNameAndLocation) {
+		this.merchantNameAndLocation = merchantNameAndLocation;
+	}
+
+	public int getApplicationProgramIdentitifier() {
+		return applicationProgramIdentitifier;
+	}
+
+	public void setApplicationProgramIdentitifier(int applicationProgramIdentitifier) {
+		this.applicationProgramIdentitifier = applicationProgramIdentitifier;
+	}
+
+	public int getIssuerScriptResults() {
+		return issuerScriptResults;
+	}
+
+	public void setIssuerScriptResults(int issuerScriptResults) {
+		this.issuerScriptResults = issuerScriptResults;
+	}
+
+	public int getDsdol() {
+		return dsdol;
+	}
+
+	public void setDsdol(int dsdol) {
+		this.dsdol = dsdol;
+	}
+
+	public int getTerminalTransactionQualifiers() {
+		return terminalTransactionQualifiers;
+	}
+
+	public void setTerminalTransactionQualifiers(int terminalTransactionQualifiers) {
+		this.terminalTransactionQualifiers = terminalTransactionQualifiers;
+	}
+
+	public int getKernel4ReaderCapbilities() {
+		return kernel4ReaderCapbilities;
+	}
+
+	public void setKernel4ReaderCapbilities(int kernel4ReaderCapbilities) {
+		this.kernel4ReaderCapbilities = kernel4ReaderCapbilities;
+	}
+
+	public int getFormFactorIndicator() {
+		return formFactorIndicator;
+	}
+
+	public void setFormFactorIndicator(int formFactorIndicator) {
+		this.formFactorIndicator = formFactorIndicator;
+	}
+
+	public int getVLPTerminalTransactionLimit() {
+		return VLPTerminalTransactionLimit;
+	}
+
+	public void setVLPTerminalTransactionLimit(int vLPTerminalTransactionLimit) {
+		VLPTerminalTransactionLimit = vLPTerminalTransactionLimit;
+	}
+
+	public int getParentENCTerminalActionCodeDefault() {
+		return parentENCTerminalActionCodeDefault;
+	}
+
+	public void setParentENCTerminalActionCodeDefault(int parentENCTerminalActionCodeDefault) {
+		this.parentENCTerminalActionCodeDefault = parentENCTerminalActionCodeDefault;
+	}
+
+	public int getTerminalActionCodeDecline() {
+		return terminalActionCodeDecline;
+	}
+
+	public void setTerminalActionCodeDecline(int terminalActionCodeDecline) {
+		this.terminalActionCodeDecline = terminalActionCodeDecline;
+	}
+
+	public String getCreateUser() {
+		return createUser;
+	}
+
+	public void setCreateUser(String createUser) {
+		this.createUser = createUser;
+	}
+
+	public String getCreateTimestamp() {
+		return createTimestamp;
+	}
+
+	public void setCreateTimestamp(Timestamp createTimestamp) {
+		this.createTimestamp = createTimestamp;
+	}
+
+	public String getModifyUser() {
+		return modifyUser;
+	}
+
+	public void setModifyUser(String modifyUser) {
+		this.modifyUser = modifyUser;
+	}
+
+	public String getModifyTimestamp() {
+		return modifyTimestamp;
+	}
+
+	public void setModifyTimestamp(String modifyTimestamp) {
+		this.modifyTimestamp = modifyTimestamp;
+	}
+
+
+}

@@ -1,0 +1,31 @@
+
+==================================================================================  
+
+Edit Cardholder
+  
+Primary Account Number :   9999999999999999	Sequence : 99
+
+Version Number  	: 99
+Usage Control   	: 99
+
+Cryptogram Information	: 9
+
+Application Cryptogram	: 99999999
+Unpredictable Number	: 99999999
+
+Application Transaction Counters
+
+Transaction Counter	: 99
+Last Online Counter	: 99
+
+Effective Date		: 2018-12-31	
+Expiration Date   	: 2018-12-31	
+
+
+
+Create User 	:  TALEXAND		Create Timestamp  :  2018-12-31 23:59:59.0
+Modify User 	:  TALEXAND		Modify Timestamp  :  2018-12-31 23:59:59.0
+
+Prv Page	Insert	Select	Update	Delete	Nxt Page
+
+==================================================================================  

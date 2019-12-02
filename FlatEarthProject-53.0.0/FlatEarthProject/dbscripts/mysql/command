@@ -1,0 +1,19 @@
+
+mysql> USE TEST;
+
+mysql> SOURCE C:\Users\Toussaint\Documents\Education\High Active\Spring\High Active\SpringMVCCRUD\SpringMVCCRUDProject\dbscripts\mysql\emp99script.sql
+
+Query OK, 0 rows affected (0.28 sec)
+
+mysql> DESC EMP99;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| ID          | int(11)     | NO   | PRI | NULL    | auto_increment |
+| NAME        | varchar(30) | NO   |     | NULL    |                |
+| SALARY      | double(6,2) | NO   |     | NULL    |                |
+| DESIGNATION | varchar(50) | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql>

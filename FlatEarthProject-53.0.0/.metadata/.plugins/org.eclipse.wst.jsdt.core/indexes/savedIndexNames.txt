@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\Toussaint Alexander\Documents\Education\Frameworks\Spring\Spring Earth Project\FlatEarthProject-53.0.0\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3037074423.index
+1991637903.index
+1027672235.index
+1853320872.index
+526298455.index
+2350080209.index

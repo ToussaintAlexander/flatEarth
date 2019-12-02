@@ -1,0 +1,45 @@
+		// Detail Rule Type
+		 
+		CodeBean codeTableRowB8110 = new CodeBean( 0,  80, 10, "Address Rule Type"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowB8120 = new CodeBean( 0,  80, 20, "Composite Rule Type"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowB8130 = new CodeBean( 0,  80, 30, "Constant Rule Type"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowB8140 = new CodeBean( 0,  80, 40, "Database Rule Type"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowB8150 = new CodeBean( 0,  80, 50, "Numeric Rule Type"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		
+		codeTableRowList.add(codeTableRowB8110);
+		codeTableRowList.add(codeTableRowB8120);
+		codeTableRowList.add(codeTableRowB8130);
+		codeTableRowList.add(codeTableRowB8140);
+		codeTableRowList.add(codeTableRowB8150);
+		
+		// Detail Rule Group
+		 
+		CodeBean codeTableRowC8110 = new CodeBean( 0,  90, 10, "Address Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8120 = new CodeBean( 0,  90, 15, "Arithmetic Rule Group"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8130 = new CodeBean( 0,  90, 20, "Bitmap Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8140 = new CodeBean( 0,  90, 25, "Character Rule Group"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8150 = new CodeBean( 0,  90, 30, "City Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8160 = new CodeBean( 0,  90, 35, "Code Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8170 = new CodeBean( 0,  90, 40, "Country Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8180 = new CodeBean( 0,  90, 45, "Currency Rule Group"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC8190 = new CodeBean( 0,  90, 50, "Date Time Rule Group"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC81A0 = new CodeBean( 0,  90, 55, "Exact Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC81B0 = new CodeBean( 0,  90, 60, "Range Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC81C0 = new CodeBean( 0,  90, 65, "Rate Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC81D0 = new CodeBean( 0,  90, 70, "Sequence Rule Group"	, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRowC81E0 = new CodeBean( 0,  90, 75, "State Rule Group"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		
+		codeTableRowList.add(codeTableRowC8110);
+		codeTableRowList.add(codeTableRowC8120);
+		codeTableRowList.add(codeTableRowC8130);
+		codeTableRowList.add(codeTableRowC8140);
+		codeTableRowList.add(codeTableRowC8150);
+		codeTableRowList.add(codeTableRowC8160);
+		codeTableRowList.add(codeTableRowC8170);
+		codeTableRowList.add(codeTableRowC8180);
+		codeTableRowList.add(codeTableRowC8190);
+		codeTableRowList.add(codeTableRowC81A0);
+		codeTableRowList.add(codeTableRowC81B0);
+		codeTableRowList.add(codeTableRowC81C0);
+		codeTableRowList.add(codeTableRowC81D0);
+		codeTableRowList.add(codeTableRowC81E0);

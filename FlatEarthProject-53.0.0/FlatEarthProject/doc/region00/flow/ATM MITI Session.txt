@@ -1,0 +1,11 @@
+https://www.admfactory.com/iso8583-flows-data-elements-meaning-and-values/
+
+ATM
+Let’s imagine an ATM day:
+
+ATM receives x800 to start;
+ATM send x800 request the encryption key (master key exchange);
+ATM send x100 messages during the day for balance inquiry;
+ATM send x200 messages during the day for cash withdraw;
+ATM receive x600 from bank to check the total cash amount available.
+ATM send x500 reconciliation message at the end of the day with daily activity.

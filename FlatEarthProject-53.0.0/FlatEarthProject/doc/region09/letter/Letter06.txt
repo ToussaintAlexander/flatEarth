@@ -1,0 +1,19 @@
+Subsection 1.0 - first
+
+	Business Overview Field
+
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+	Processor Impact List
+		ID           		NUMBER(4)    	   
+		PROCESSOR		VARCHAR2(30)		Acquirer
+		IMPACT           	NUMBER(1)		Issuer  
+
+
+	Region Impact List 					Africa
+		ID           		NUMBER(4) 		Americas
+		REGION			VARCHAR2(30)		Asia
+		IMPACT           	NUMBER(1)  		Europe
+ 								Oceania

@@ -1,0 +1,147 @@
+
+
+DE0000	Dummy
+------------------------------------------------------------------------------------------------------
+DE001	BITMAP
+DE002	BIN		PAN		CHECK DIGIT		BIN***		CD=MATH
+DE003	TRANS TYPE	FROM ACCT	TO ACCT			***
+------------------------------------------------------------------------------------------------------
+DE004	TRANS AMT		12 N	4 BCD	6 BYTES
+DE005	SETTLE AMT		12 N
+DE006	CARHOLDER BILL AMT	12 N
+------------------------------------------------------------------------------------------------------
+DE007	TRANS DATE TIME		10 N		5 BYTES		MAY BE GMT
+------------------------------------------------------------------------------------------------------
+DE010	CARD BILL CONV RATE	8 N		4 BYTES		MUST HAVE DE006 + DE051
+								RATES ***
+								POSITION	1  2  3  4  5  6  7  8
+										6  9  9  8  5  0  2  2
+
+										69985022 = 9.985022
+
+								POSITION 1 = DECIMAL PLACEMENT
+------------------------------------------------------------------------------------------------------
+DE011	STAN			6 N		3 BYTES		MSG INITIATOR - RANDOM? + 1
+
+DE012	LOCAL TRANS TIME	6 N		3 BYTES		hh mm ss
+								card accceptor location time
+------------------------------------------------------------------------------------------------------
+DE012	LOCAL TRANS DATE	4 N		2 BYTES		mm dd
+					
+								for recurring current payment date
+------------------------------------------------------------------------------------------------------
+DE014	EXPIRY DATE		4 N 		2 BYTES		yy mm
+		
+								ALSO LOCATED IN DE035 OR DE045
+								WHICH IS THE CARD'S MAGNETIC STRIPE
+
+								EXPIRY DATE DETERMINES WHICH CVV2 KEY TO USE
+
+								THE DATE 4912 AS A NON-EXPIRING DATE.
+------------------------------------------------------------------------------------------------------
+DE018	MERCHANT TYPE		4 N		2 BYTES		MERCHANT CATEGORY CODES (MCC) ***
+								STATUS CHECK (AFD) 5412
+								ATM TRANSACTION 6011
+								CASH BACK 5411
+								FED TAX PAYMENTS 9311
+						
+								OCT: 4829 - WIRE TRANSFER
+								OCT: 6012 - INTIATED BY FINANCIAL INSTITUTIONS
+------------------------------------------------------------------------------------------------------
+DE019	ACQ INST COUNTRY CODE	3 N		2 BYTES		COUNTRY AND CURRENCY CODES APPENDIX ***
+
+								IF CARD ACCEPTOR <> DE019 THEN ---> DE043
+								MILITARY BASES, CONSULATES, EMBASSIES ---> 840
+------------------------------------------------------------------------------------------------------
+DE020	COUNTRY CODE PAN EXT	3 N		2 BYTES		CARD ISSUER INSTITUTION COUNTRY
+								COUNTRY AND CURRENCY CODES APPENDIX ***
+------------------------------------------------------------------------------------------------------
+DE022	POS ENTRY MODE CODE	4 N		2 BYTES		POSITIONS 1-2	ACCT NBR/DATE ENTRY MODE ***
+								POSITIONS 3	PIN ENTRY CAPABILITY
+								POSITIONS 4	UNUSED
+
+								FOR MOTO & ELECTRONIC COMMERCE POSITIONS 1-2=01		
+								POS BALANCE INQUIRIES=0210, 9010, 0510, 9510
+								CONTACTLESS - POSITIONS 1-2=07
+								PIN CHANGE/PIN UNBLOCK - POSITIONS 1-2=05 OR 95					
+								CONTACTLESS MAGNETIC STRIPE - POSITIONS 1-2=91
+
+								THIS FIELD REQUIRED FOR ALL 01XX & 04XX
+								REQUIRED FOR CARD NOT PRESENT (CNP) & MOTO
+
+								POSITIONS 1-2 - VALID CODES:
+
+								00 - UNKNOWN TERMINAL
+								01 - MANUAL KEY ENTRY
+								02 - MAG STRIPE READ, NO CVV
+
+								05 - INTEGRATED CIRCUIT CARD READ;
+								     CVV AND iCVV OBTAINED FROM CHIP ON CARD
+
+								07 - CONTACTLESS CHIP ON CARD READ
+								     CAM, CVV, iCVV CHECKING IS POSSIBLE
+
+								90 - MAGNETIC STRIPE READ POSSIBLE
+								     CVV CHECKING IS POSSIBLE
+
+								91 - CONTACTLESS CHIP ON CARD READ POSSIBLE
+								     MAGNETIC STRIPE RULES APPLIED
+								     CAM, dCVV, iCVV, OR CVV CHECKING POSSIBLE1 
+
+								POSITION 3 - PIN ENTRY CAPABILITY VALID CODES:
+
+								0 - UNKNOWN
+								1 - TERMINAL CAN ACCEPT PINS
+								2 - TERMINAL CANNOT ACCEPT PINS
+								8 - TERMINAL PIN PAD IS DOWN
+------------------------------------------------------------------------------------------------------
+DE023	CARD SEQ NUMBER		3 N	2 BYTES			WHEN 2 OR MORE CARDS TO A A PAN.
+								TRACKING TOOL FOR REISSUING EXPIRED CARDS
+
+								NOT PART PF THE CRYPTOGRAM
+								CARD SEQ NUMBER IS USED TO DERIVE THE (UDK) - UNIQUE DERIVIATION KEY
+								FROM THE MASTER DERIVIATION KEY (MDK) WHEN PERFORMING
+								ONLINE CARD AUTHENTICATION.
+
+								USED FOR VSDC FULL DATA AND CONTACTLESS MAGNETIC STRIPE TRANSACTIONS
+------------------------------------------------------------------------------------------------------
+DE025	POS COND CODE		2 N	1 BYTES			IDENTIFIES TRANSACTION CONDITIONS AT THE POS
+
+								VALID CODES:
+
+								00 - NORMAL TRANSACTION; CARD & CARDHOLDER PRESENT
+								01 - CARDHOLDER NOT PRESENT
+								02 - CARD & CARDHOLDER PRESENT; PIN ENTERED
+								03 - MERCHANT SUSPICIOUS OF TRANSACTION, CARD MAY BE LOST, STOLEN, OR COUNTERFEIT
+
+								05 - CARDHOLDER PRESENT, CARD NOT PRESENT
+								     CARDHOLDER PROVIDES MERCHANT WITH CARD DATA MAINTAINED ON CARD ON FILE (COF)
+								     FOR BILLING PURPOSES.
+								     EXAMPLE: INITIATED BY TOLL BRIDGE, ROAD PROXIMITY DEVICE
+
+								06 - COMPLETION ADVICE -PRE-AUTH COMPLETION  ADVICES
+
+								08 - MAIL, PHONE, RECURRING TRANSACTIONS
+								     DE126.13=R 	RECURRING
+								     DE060.8=02
+
+								51 - REQUEST FOR ACCT NUMBER VERIFICATION AND NOT AUTHORIZATION
+								     > ADDRESS VERIFICATION
+								     > ACCOUNT NUMBER VERIFICATION
+								     > CVV2 VERIFICATION
+								     > PRODUCT ELIGIBILITY
+
+								59 - E-COMMERCE REQUEST THROUGH PUBLIC NETWORK (INTERNET)
+
+								71 - CARD PRESENT, MAGNETIC STRIPE CANNOT BE READ(KEY ENTERED)
+
+			
+			 
+
+								 	
+
+
+
+
+
+

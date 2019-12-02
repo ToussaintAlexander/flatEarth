@@ -1,0 +1,16 @@
+
+Card Menu
+
+	Chip Menu
+		Amount Screen
+		Application Screen
+		Issuer Screen
+		Keys Screen
+		Verification Screen
+		
+	ChipCard Screen
+
+	Magstripe Menu
+		Track 1
+		Track 2
+		Track 3

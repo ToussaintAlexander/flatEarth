@@ -1,0 +1,13 @@
+package com.external.merchant.terminal.model;
+
+public class TerminalBean {
+
+	private int CommandTemplate;				// Identifies the data field of a command message	Terminal	binary	 	var.	var.	primitive 
+	private int ApplicationIdentifier;			// (AID), Terminal Identifies the application as described in ISO/IEC 7816-5	Terminal	binary	 	5	16	primitive	 
+	private int ApplicationVersionNumber;			// Version number assigned by the payment system for the Kernel application	Terminal	binary	 	2	2	primitive
+	private int CertificationAuthorityPublicKeyIndex;	// (PKI) Identifies the Certificate Authority's public key in conjunction with the RID for use in offline static and dynamic data authentication.	Terminal	binary 8	 	1	1	constructed	 
+	private int CardholderVerificationMethodResults;	// (CVM) Indicates the results of the last CVM performed	Terminal	binary	 	3	3	constructed	 
+	private int UnpredictableNumber;			// (UN)	Value to provide variability and uniqueness to the generation of a cryptogram	Terminal	binary	 	4	4	constructed	
+	private int ApplicationProgramIdentifier;		// (Program ID)	Proprietary data element used by the device during Dynamic Reader Limit processing to determine the Reader Limit Set to apply for the transaction. EMV mode readers that support Dynamic Reader Limits (DRL) functionality support four or more Application Program Identifiers, each corresponding to a Reader Limit Set.	Terminal	binary	 	1	16
+	private int IssuerScriptResults;			// Indicates the results of Issuer Script processing. When the reader/terminal transmits this data element to the acquirer, in this version of Kernel 3, it is acceptable that only byte 1 is transmitted, although it is preferable for all five bytes to be transmitted.	Terminal	binary	 	var.	var
+

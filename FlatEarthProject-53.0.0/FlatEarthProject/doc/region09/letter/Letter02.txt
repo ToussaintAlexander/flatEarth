@@ -1,0 +1,12 @@
+Cover Screen 
+
+	Association		VARCHAR2(30)
+	Title			VARCHAR2(30)
+	Subtitle		VARCHAR2(30)
+	Version			VARCHAR2(30)
+	Effective Date		DATE
+				 	
+	Release Overview List
+		ID           	NUMBER(4)
+		DATE_FIELD	DATE
+		EVENT		VARCHAR2(30)

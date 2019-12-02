@@ -1,0 +1,51 @@
+Subsection 1.0 - first
+
+	Business Overview Field
+
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+	Processor Impact List
+		ID           		NUMBER(4)    	   
+		PROCESSOR		VARCHAR2(30)		Acquirer
+		IMPACT           	NUMBER(1)		Issuer  
+
+	Platform Impact List 					Agriculture, Forestry and Fishing
+		ID           		NUMBER(4) 		Finance, Insurance and Real Estate
+		PLATFORM		VARCHAR2(30)		Renewable Energy Resources
+		IMPACT           	NUMBER(1) 		Travel and Hospitality Services
+								Computer Hardware/Software Manufacturing
+
+	Region Impact List 					Africa
+		ID           		NUMBER(4) 		Americas
+		REGION			VARCHAR2(30)		Asia
+		IMPACT           	NUMBER(1)  		Europe
+ 								Oceania
+
+	Processing Impact List 					Authorization
+   		ID           		NUMBER(4) 		Clearing
+		PROCESSING		VARCHAR2(30)		Settlement
+		IMPACT           	NUMBER(1)
+
+	Message Impact Screen					20
+		ID           		NUMBER(4)
+		MESSAGE_TYPE		VARCHAR2(30)
+		IMPACT           	NUMBER(1)
+
+			Requirement Menu
+
+				Usage Screen
+				Field Edit Element Screen
+				Field Edit Header Screen 
+				Field Edit Detail Screen
+				Field Edit Routine Screen 
+				Valid Code Screen 
+				Reject Code Screen
+
+	System Impact List
+   		ID           		NUMBER(4)
+		SYSTEM_NAME		VARCHAR2(30)
+		TESTING_AVAILABLE	NUMBER(1)
+		TESTING_REQUIRED	NUMBER(1)
+		ACTIVATION_REQUIRED	NUMBER(1)

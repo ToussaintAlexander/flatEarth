@@ -1,0 +1,89 @@
+Wells Fargo	Passport
+
+Account Number		   Ending in  1234	Teresa Torres
+Statement Closing Date		   12/06/18	123 Any Street
+Credit Line			  $2,100.00	Some City, CA 12345
+___________________________________________________________________
+
+Account Summary					Payment Information
+
+Previous Balance	$1,686.15		New Balance			 $523.20
+- Credits		    $0.00		Scheduled Minimum Payment	  $35.00
+- Payments		$1,688.15		Scheduled Payment Due Date	12/01/18
++ Purchases & Other Chgs  $523.20
++ Cash Advances		    $0.00
++ FINANCE CHARGE	    $0.00
+= New Balance		  $523.20
+___________________________________________________________________
+				Corresponding		Daily
+				Annual			Finance		Average
+				Percentage		Charge		Daily
+Type of Balance			Rate			Rate		Balance
+___________________________________________________________________
+Purchase(s)			19.80%			.05424%		$0.00
+Cash Advances			21.80%			.05972%		$0.00
+
+Composite Annual Perentage Rte 21.80%		Days in Billing Cycle 25
+___________________________________________________________________
+Transactions
+
+Trans	Post	Reference Number	Description	Credit		Charges
+10/08	10/08	XXXXXXXXXXXXXXXX	Merchant Name			523.20
+10/08	10/09	XXXXXXXXXXXXXXXX	Payments	1,688.15
+___________________________________________________________________
+Total Payments for this Period		  	       $1,688.15
+
+=========
+Next Page
+=========
+
+Wells Fargo	Passport
+
+Account Number		   Ending in  1234	Teresa Torres
+Statement Closing Date		   12/06/18	123 Any Street
+Credit Line			  $2,100.00	Some City, CA 12345
+___________________________________________________________________
+Transactions (Continued...)
+
+Trans	Post	Reference Number	Description	Credit		Charges
+
+Purchases, Balance Transfers & Other Charges
+
+05/08	05/09	1234-ABCD-5678-EFGH	Merchant Name			123.45
+05/08	05/09	1234-ABCD-5678-EFGH	Merchant Name			123.45
+05/08	05/09	1234-ABCD-5678-EFGH	Merchant Name			123.45
+05/08	05/09	1234-ABCD-5678-EFGH	Merchant Name			123.45
+05/08	05/09	1234-ABCD-5678-EFGH	Merchant Name			123.45
+___________________________________________________________________
+Total Purchases, Balances Transfers & Other Charges for this Period    $634.94
+
+Fees Charged
+___________________________________________________________________
+Total Fees Charged for this Period					 $0.00
+
+Interest Charged
+
+		Interest Charge on Purchases				 $0.00
+		Interest Charge on Cash Advances			 $0.00
+___________________________________________________________________
+Total Interest Charged for this Period					 $0.00
+
+		2018 Totals Year-to-Date
+
+	Total Fees Charged in 2018			$523.20
+	Total Interest Charged in 2018			$184.90
+___________________________________________________________________
+Interest Charge Calculation
+Your Annual Percentage Rate (APR) is the annual interest rate on your account.
+
+Type of Balance		Annual Percentage	Balance Subject to	Days in		Interest
+			Rate (APR)		Interest Rate		Billing Cycle	Charge
+
+Purchases		17.15% variable		$0.00			30		$0.00
+Cash Advances		23.99% variable		$0.00			30		$0.00	
+
+
+
+
+
+

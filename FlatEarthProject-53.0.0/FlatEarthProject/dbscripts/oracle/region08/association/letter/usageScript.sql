@@ -1,0 +1,12 @@
+delete from USAGE_TABLE;
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #1' , 'Africa'			, 'Aerospace Platform' , 'BASE I' , '0100', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #2' , 'Asia'  			, 'Healthcare Platform', 'BASE II', '0110', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #3' , 'Australia'		, 'Aerospace Platform' , 'BASE I' , '0200', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #4' , 'Central America'	, 'Healthcare Platform', 'BASE II', '0210', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #5' , 'Europe'			, 'Aerospace Platform' , 'BASE I' , '0400', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #6' , 'Middle East'  	, 'Healthcare Platform', 'BASE II', '0410', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #7' , 'North America'	, 'Aerospace Platform' , 'BASE I' , '0800', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #8' , 'Oceania'  		, 'Healthcare Platform', 'BASE II', '0810', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #9' , 'South America'	, 'Aerospace Platform' , 'BASE I' , '0100', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into USAGE_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 2, 1, 'System #10', 'Africa'  		, 'Healthcare Platform', 'BASE II', '0110', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

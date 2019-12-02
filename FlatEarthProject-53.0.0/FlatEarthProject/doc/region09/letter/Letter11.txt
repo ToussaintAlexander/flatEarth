@@ -1,0 +1,13 @@
+Appendix Menu 
+
+	Acronym Screen
+		ID           	NUMBER(4)    	   
+		ACRONYM		VARCHAR2(30)
+		FULL_NAME	VARCHAR2(30)
+		DESCRIPTION	VARCHAR2(30) 
+
+	Related Document Screen
+		ID           	NUMBER(4)    	   
+		DOCUMENT	VARCHAR2(30)	 
+		VERSION		VARCHAR2(5)	
+		AUTHOR		VARCHAR2(30)

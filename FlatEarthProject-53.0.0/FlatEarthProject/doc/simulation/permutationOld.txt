@@ -1,0 +1,62 @@
+package com.system.message.utilties;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Permutation {
+
+	public void reorder(  List<Integer> 	uniqueList
+						, int 				permutationSize
+						, List<Integer> 	permutation
+						, boolean 			only) 
+	{
+		
+		if (permutation == null) {
+
+			assert 0 < permutationSize && permutationSize <= uniqueList.size();
+			permutation = new ArrayList<>(permutationSize);
+
+			if (!only) {
+				System.out.println(Arrays.toString(permutation.toArray()));
+			}
+		}
+
+		for (int i : uniqueList) {
+			if (permutation.contains(i)) {
+				continue;
+			}
+			permutation.add(i);
+
+			if (!only) {
+				System.out.println(Arrays.toString(permutation.toArray()));
+			} else if (permutation.size() == permutationSize) {
+				System.out.println(Arrays.toString(permutation.toArray()));
+			}
+
+			if (permutation.size() < permutationSize) {
+				reorder(uniqueList, permutationSize, permutation, only);
+			}
+
+			permutation.remove(permutation.size() - 1);
+
+		}
+
+	}
+	/************************************************************************************
+	 ************************************************************************************
+	 */
+	public static void main(String[] args) throws Exception {
+
+		List<Integer> list = new ArrayList<Integer>();
+
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list.add(4);
+
+		new Permutation().reorder(list, list.size(), null, true);
+
+	}
+
+}

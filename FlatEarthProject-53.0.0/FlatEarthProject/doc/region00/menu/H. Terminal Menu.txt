@@ -1,0 +1,6 @@
+
+Terminal Menu
+
+	Currency
+	Terminal
+	Transaction

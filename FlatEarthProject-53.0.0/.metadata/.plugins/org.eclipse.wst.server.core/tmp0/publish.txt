@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Nov 12 19:39:59 EST 2019
+org.eclipse.jst.jee.server\:FlatEarthProject=C\:\\spring-tool-suite-3.9.7.RELEASE-e4.10.0-win32-x86_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\FlatEarthProject
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Toussaint\ Alexander\\Documents\\Education\\Frameworks\\Spring\\Spring\ Earth\ Project\\FlatEarthProject-53.0.0\\FlatEarthProject\\WebContent\\WEB-INF\\lib\\spring-web-4.0.5.RELEASE.jar=C\:\\spring-tool-suite-3.9.7.RELEASE-e4.10.0-win32-x86_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\FlatEarthProject\\WEB-INF\\lib\\spring-web-4.0.5.RELEASE.jar

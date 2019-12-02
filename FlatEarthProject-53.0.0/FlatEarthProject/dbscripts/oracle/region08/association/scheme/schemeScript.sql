@@ -1,0 +1,5 @@
+delete from SCHEME_TABLE;
+insert into SCHEME_TABLE values ( 0, 'Visa International'      , 'Public' ,'V', 'Financial Services', 1958, 'Dee Hock', 'Foster City'  , 'CA', 'USA','Worldwide','Alfred F. Kelly','Credit Cards', 18358,12144,699000,67977,32760,11300,'VISA.COM','TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP),'TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP));
+insert into SCHEME_TABLE values ( 0, 'Mastercard International', 'Public' ,'M', 'Financial Services', 1958, 'Dee Hock', 'Purchase'     , 'NY', 'USA','Worldwide','John Smith'     ,'Credit Cards', 18358,12144,699000,67977,32760,11300,'MC.COM'  ,'TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP),'TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP));
+insert into SCHEME_TABLE values ( 0, 'American Express'        , 'Public' ,'V', 'Financial Services', 1958, 'Dee Hock', 'New York City', 'NY', 'USA','Worldwide','Jane Smith'     ,'Credit Cards', 18358,12144,699000,67977,32760,11300,'AMEX.COM','TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP),'TALEXAND',SYS_EXTRACT_UTC(SYSTIMESTAMP));
+commit;

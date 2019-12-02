@@ -1,0 +1,5 @@
+delete from FILE_PROPERTIES_TABLE;
+insert into FILE_PROPERTIES_TABLE values ( 0, 'Props File 1', 'Default Properties 1', 'Props Loc 1', 'Input FileName1', 'Output FileName1', 1, 'EBCDIC','Path Name 1','File Name 1','File Input Stream 1','File Output Stream 1','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into FILE_PROPERTIES_TABLE values ( 0, 'Props File 2', 'Default Properties 2', 'Props Loc 2', 'Input FileName2', 'Output FileName2', 0, 'ASCII' ,'Path Name 2','File Name 2','File Input Stream 2','File Output Stream 2','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into FILE_PROPERTIES_TABLE values ( 0, 'Props File 3', 'Default Properties 3', 'Props Loc 3', 'Input FileName3', 'Output FileName3', 1, 'EBCDIC','Path Name 3','File Name 3','File Input Stream 3','File Output Stream 3','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

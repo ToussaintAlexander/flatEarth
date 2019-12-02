@@ -1,0 +1,143 @@
+delete from CARDHOLDER_TABLE;
+
+-- United States
+
+insert into CARDHOLDER_TABLE values ( 0, 'James'		,'X', 'Smith'		,'123456789', 'Apple Computers'			,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'John'			,'X', 'Johnson'		,'123456789', 'Google, Inc.'			,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Robert'		,'X', 'Williams'	,'123456789', 'Microsoft, Inc.'			,'Client Services'			,'Business Analyst'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Michael'		,'X', 'Jones'		,'123456789', 'Facebook, Inc.'			,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'William'		,'X', 'Brown'		,'123456789', 'Amazon, Inc.'			,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Mary'			,'X', 'Smith'		,'123456789', 'McDonalds, Inc.'			,'Production'				,'Quality Technician'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Patricia'		,'X', 'Johnson'		,'123456789', 'General Electric, Inc.'	,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jennifer'		,'X', 'Williams'	,'123456789', 'Oracle, Inc.'			,'Quality Control'			,'Calibration Technician'	,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Linda'		,'X', 'Jones'		,'123456789', 'Intel, Inc.'				,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Elizabeth'	,'X', 'Brown'		,'123456789', 'Star Bucks, Inc.'		,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Great Britain
+
+insert into CARDHOLDER_TABLE values ( 0, 'Oliver'		,'X', 'Smith'		,'123456789', 'Tesco PLC'				,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Harry'		,'X', 'Jones'		,'123456789', 'Sky PLC'					,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'George'		,'X', 'Williams'	,'123456789', 'BP'						,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jack'			,'X', 'Taylor'		,'123456789', 'BT Group'				,'Client Services'			,'Business Analyst'			,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jacob'		,'X', 'Davies'		,'123456789', 'Royal Dutch Shell'		,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Olivia'		,'X', 'Smith'		,'123456789', 'HSBC Bank'				,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Sophia'		,'X', 'Jones'		,'123456789', 'Barclays'				,'Production'				,'Quality Technician'		,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Amelia'		,'X', 'Williams'	,'123456789', 'BBC'						,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Lily'			,'X', 'Taylor'		,'123456789', 'Lloyds'					,'Research and Development'	,'Industrial Designer'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Emily'		,'X', 'Davies'		,'123456789', 'BBC'						,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Canada
+
+insert into CARDHOLDER_TABLE values ( 0, 'Liam'			,'X', 'Smith'		,'123456789', 'RBC'						,'Human Resource Management','HR Consultant'			,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jackson'		,'X', 'Brown'		,'123456789', 'TD'						,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Logan'		,'X', 'Tremblay'	,'123456789', 'Scotiabank'				,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Lucas'		,'X', 'Martin'		,'123456789', 'Bank of Montreal'		,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Noah'			,'X', 'Roy'			,'123456789', 'Bell'					,'Client Services'			,'Business Analyst'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Ava'			,'X', 'Smith'		,'123456789', 'CIBC'					,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Olivia'		,'X', 'Brown'		,'123456789', 'TELLUS'					,'Sales and Marketing'		,'Product Manager'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Emma'			,'X', 'Tremblay'	,'123456789', 'Suncor'					,'Production'				,'Quality Technician'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Charlotte'	,'X', 'Martin'		,'123456789', 'Canadian Tire'			,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Sadie'		,'X', 'Roy'			,'123456789', 'Lululemon'				,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Italian
+
+insert into CARDHOLDER_TABLE values ( 0, 'Francesco'	,'X', 'Rossi'		,'123456789', 'Ferrari'					,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Alessandro'	,'X', 'Bianchi'		,'123456789', 'Ducati'					,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Andrea'		,'X', 'Ricci'		,'123456789', 'Maserati'				,'Research and Development'	,'Industrial Designer'		,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Lorenzo'		,'X', 'Marino'		,'123456789', 'Martini and Rossi'		,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Mattia'		,'X', 'Moretti'		,'123456789', 'Gucci'					,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Sofia'		,'X', 'Rossi'		,'123456789', 'Nutella'					,'Client Services'			,'Business Analyst'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Giulia'		,'X', 'Bianchi'		,'123456789', 'Dolce and Gabbana'		,'Quality Control'			,'Calibration Technician'	,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Aurora'		,'X', 'Ricci'		,'123456789', 'Versace'					,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Emma'			,'X', 'Marino'		,'123456789', 'Pirelli'					,'Production'				,'Quality Technician'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Giorgia'		,'X', 'Moretti'		,'123456789', 'Prada'					,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Chinese
+
+insert into CARDHOLDER_TABLE values ( 0, 'Andrew'		,'X', 'Li'			,'123456789', 'Lenovo'					,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Amy'			,'X', 'Wang'		,'123456789', 'Huawei'					,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Dan'			,'X', 'Zhang'		,'123456789', 'Alibaba'					,'Human Resource Management','HR Consultant'			,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Peter'		,'X', 'Liu'			,'123456789', 'Xiaomi'					,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Albert'		,'X', 'Chen'		,'123456789', 'Air China'				,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Amy'			,'X', 'Li'			,'123456789', 'Elex'					,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jenny'		,'X', 'Wang'		,'123456789', 'Anker'					,'Client Services'			,'Business Analyst'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Grace'		,'X', 'Zhang'		,'123456789', 'Haier'					,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'May'			,'X', 'Liu'			,'123456789', 'Hisense'					,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Vivian'		,'X', 'Chen'		,'123456789', 'Cheetah Mobile'			,'Production'				,'Quality Technician'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Mexico
+
+insert into CARDHOLDER_TABLE values ( 0, 'Alejandro'	,'X', 'Garcia'		,'123456789', 'Aeromexico'				,'Production'				,'Quality Technician'		,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Eduardo'		,'X', 'Fernandez'	,'123456789', 'Banco Azteca'			,'Information Technology'	,'Software Engineer'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Carlos'		,'X', 'Lopez'		,'123456789', 'Corona'					,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jorge'		,'X', 'Martinez'	,'123456789', 'GrupoMexico'				,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Sergio'		,'X', 'Gonzalez'	,'123456789', 'Industrias Penoles'		,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Andrea'		,'X', 'Garcia'		,'123456789', 'Jose Cuervo'				,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Daniela'		,'X', 'Fernandez'	,'123456789', 'Kahlúa'					,'Quality Control'			,'Calibration Technician'	,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Marisol'		,'X', 'Lopez'		,'123456789', 'PEMEX'					,'Client Services'			,'Business Analyst'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Cristina'		,'X', 'Martinez'	,'123456789', 'TV Azteca'				,'Research and Development'	,'Industrial Designer'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Mariana'		,'X', 'Gonzalez'	,'123456789', 'Telmex'					,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- France
+
+insert into CARDHOLDER_TABLE values ( 0, 'Gabriel'		,'X', 'Dubois'		,'123456789', 'Louis Vuitton'			,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Raphael'		,'X', 'Lacroix'		,'123456789', 'Hermès'					,'Production'				,'Quality Technician'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Alexandre'	,'X', 'Bertrand'	,'123456789', 'L’Oréal Paris'			,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Antoine'		,'X', 'Fournier'	,'123456789', 'Orange'					,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Gaspard'		,'X', 'Lefevre'		,'123456789', 'Chanel'					,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Louise'		,'X', 'Dubois'		,'123456789', 'SFR'						,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Chloe'		,'X', 'Lacroix'		,'123456789', 'Lancôme'					,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Heloise'		,'X', 'Bertrand'	,'123456789', 'Cartier'					,'Quality Control'			,'Calibration Technician'	,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Adele'		,'X', 'Fournier'	,'123456789', 'AXA'						,'Client Services'			,'Business Analyst'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Juliette'		,'X', 'Lefevre'		,'123456789', 'Carrefour'				,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- German
+
+insert into CARDHOLDER_TABLE values ( 0, 'Jonas'		,'X', 'Muller'		,'123456789', 'Mercedes-Benz'			,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Elias'		,'X', 'Schmidt'		,'123456789', 'Siemens'					,'Sales and Marketing'		,'Product Manager'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Lukas'		,'X', 'Schneider'	,'123456789', 'Deutsche Bank'			,'Production'				,'Quality Technician'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Jakob'		,'X', 'Fischer'		,'123456789', 'Porsche'					,'Information Technology'	,'Software Engineer'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Niklas'		,'X', 'Schafer'		,'123456789', 'SAP'						,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Hannah'		,'X', 'Muller'		,'123456789', 'DHL'						,'Human Resource Management','HR Consultant'			,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Sophie'		,'X', 'Schmidt'		,'123456789', 'Nivea'					,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Frieda'		,'X', 'Schneider'	,'123456789', 'adidas'					,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Mathilda'		,'X', 'Fischer'		,'123456789', 'BASF'					,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Greta'		,'X', 'Schafer'		,'123456789', 'Lufthansa'				,'Client Services'			,'Business Analyst'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- India
+
+insert into CARDHOLDER_TABLE values ( 0, 'Rahul'		,'X', 'Gupta'		,'123456789', 'Tata Group'				,'Client Services'			,'Business Analyst'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Deepak'		,'X', 'Singh'		,'123456789', 'State Bank of India'		,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Rakesh'		,'X', 'Chandra'		,'123456789', 'Bharti Airtel'			,'Sales and Marketing'		,'Product Manager'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Kumar'		,'X', 'Ahuja'		,'123456789', 'Zomato'					,'Production'				,'Quality Technician'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Prashant'		,'X', 'Anand'		,'123456789', 'Louis Philippe'			,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Priya'		,'X', 'Gupta'		,'123456789', 'Mahindra Group'			,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Anjali'		,'X', 'Singh'		,'123456789', 'Infosys'					,'Human Resource Management','HR Consultant'			,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Gayatri'		,'X', 'Chandra'		,'123456789', 'Lakme Cosmetics'			,'Research and Development'	,'Industrial Designer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Lakshmi'		,'X', 'Ahuja'		,'123456789', 'HCL Technologies'		,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Ishita'		,'X', 'Anand'		,'123456789', 'Ashok Leyland'			,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+-- Russian
+
+insert into CARDHOLDER_TABLE values ( 0, 'Alexei'		,'X', 'Ivanov'		,'123456789', 'Gazprom'					,'Information Technology'	,'Software Engineer'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Anatoly'		,'X', 'Smirnov'		,'123456789', 'Lukoil'					,'Research and Development'	,'Industrial Designer'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Pavel'		,'X', 'Kuznetsov'	,'123456789', 'Rosneft'					,'Human Resource Management','HR Consultant'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Anton'		,'X', 'Popov'		,'123456789', 'Aeroflot'				,'Sales and Marketing'		,'Product Manager'			,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Vasily'		,'X', 'Vasiliev'	,'123456789', 'Russian Railways'		,'Production'				,'Quality Technician'		,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CARDHOLDER_TABLE values ( 0, 'Dmitriev'		,'X', 'Anastasiya'	,'123456789', 'Transneft'				,'Purchasing Management'	,'Inventory Analyst'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Ivanov'		,'X', 'Ekaterina'	,'123456789', 'Rushydro'				,'Shipping and Receiving'	,'Distribution Specialist'	,30120,35,'D',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Pavlov'		,'X', 'Izabella'	,'123456789', 'Slavneft'				,'Quality Control'			,'Calibration Technician'	,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Sokolov'		,'X', 'Ludmila'		,'123456789', 'LSR Group'				,'Client Services'			,'Business Analyst'			,30120,35,'M',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CARDHOLDER_TABLE values ( 0, 'Maslow'		,'X', 'Malvina'		,'123456789', 'Russneft'				,'Accounting and Finance'	,'Financial Accountant'		,30120,35,'S',CURRENT_DATE,'BSCS','Hiking','JSMITH','100,250','Secret01','1234','TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+commit;

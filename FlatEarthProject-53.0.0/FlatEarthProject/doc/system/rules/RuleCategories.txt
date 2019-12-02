@@ -1,0 +1,327 @@
+rule 
+
+0	- match all placeholders
+
+		DE000 - Unassigned
+		DE046 - Unassigned
+		DE046 - Unassigned
+		DE047 - Unassigned
+		DE056 - Unassigned
+		DE057 - Unassigned
+		DE058 - Unassigned
+		DE059 - Unassigned
+		DE061 - Unassigned
+		DE061 - Unassigned
+		DE062 - Unassigned
+		DE106 - DE122 - Unassigned
+		DE124 - Unassigned
+		DE125 - Unassigned
+		DE127 - Unassigned
+		DE129 - DE192 - Unassigned
+
+---------------------------------------------------------------------------
+1	- check primary bitmap
+
+		DE001 - Primary Bitmap	// checks that bitmap is not empty
+		DE065 - EXTENDED_BITMAP
+---------------------------------------------------------------------------
+2	- match external value from disk
+
+		DE002 - BIN	
+		DE034 - EXTENDED PRIMARY ACCOUNT NUMBER
+---------------------------------------------------------------------------
+2	- validate check digit			 
+
+		DE002 - CHECK DIGIT				// computation
+		DE034 - EXTENDED PRIMARY ACCOUNT NUMBER
+		DE052 - PERSONAL IDENTIFICATION NUMBER			b64
+		DE105 - DOUBLE_LENGTH_DES_KEY				1..999
+---------------------------------------------------------------------------
+3	- check inter element code 				// memory
+
+		DE003 - PROCESSING CODE					2+2+2=6
+		DE018 - MERCHANT TYPE					4
+		DE019 - ACQUIRING INSTITUTION COUNTRY CODE		3
+		DE020 - PAN EXTENDED COUNTRY CODE			3
+		DE021 - FORWARDING INSTITUTION COUNTRY CODE		3
+		DE022 - POINT OF SERVICE ENTRY MODE			2+1=3
+		DE024 - FUNCTION CODE					3 ???
+		DE032 - ACQUIRING INSITITUTION IDENTIFICATION CODE	...11
+		DE033 - FORWARDING INSITITUTION IDENTIFICATION CODE	...11
+		DE038 - AUTHORIZATION IDENTIFICATION RESPONSE		6
+		DE039 - RESPONSE CODE					2
+		DE040 - SERVICE RESTRICTION CODE			3
+		DE041 - CARD ACCEPTOR TERMINAL IDENTIFICATION		8
+		DE042 - CARD ACCEPTOR IDENTIFICATION CODE		15
+
+		DE044 - ADDITIONAL RESPONSE DATA
+
+			RESPONSE REASON CODE
+			ADDRESS VERFICIATION SERVICE
+			CVV DCVV  ICVV RESULTS CODE
+			CVV2 RESULTS CODE
+			CARD AUTHENTICATION RESULTS CODE
+			CAVV RESULT CODE
+
+		DE049 - TRANSACTION CURRENCY CODE			3
+		DE050 - SETTLEMENT CURRENCY CODE			3
+		DE051 - CARDHOLDER BILLING CURRENCY CODE		3
+		DE053 - SECURITY RELATED INFORMATION			16
+
+		DE060 - ADDITIONAL POS INFORMATION			6
+
+			TERMINAL_TYPE_CODE				1
+			TERMINAL_ENTRY_CAPABILITY			1
+			CHIP_CONDITION_CODE				1
+			MOTO_ECOMMERCE_INDICATOR			1
+			CARDHOLDER_IDENTIFICATION_METHOD		1
+			PARTIAL_AUTHORIZATION_INDICATOR			1
+
+		DE064 - MESSAGE_AUTHENTICATION_CODE			16
+		DE066 - SETTLEMENT_CODE					1
+		DE067 - EXTENDED_PAYMENT_CODE				2
+		DE068 - RECEIVING_INSTITUTION_COUNTRY_CODE		3
+		DE069 - SETTLEMENT_INSTITUTION_COUNTRY_CODE		3
+		DE070 - NETWORK_MANAGEMENT_INFORMATION_CODE		3
+		DE071 - MESSAGE_NUMBER					4
+		DE072 - LAST_MESSAGE_NUMBER				4
+		DE091 - FILE_UPDATE_CODE				1
+		DE092 - FILE_SECURITY_CODE				2
+		DE093 - RESPONSE_INDICATOR				5
+		DE094 - SERVICE_INDICATOR				7
+		DE096 - MESSAGE_SECURITY_CODE				64
+		DE099 - SETTLEMENT_INSTITUTION_IDENTIFICATION_CODE	1..11
+		DE100 - RECEIVING_INSTITUTION_INDENTIFICATION_CODE	1..11
+		DE128 - MESSAGE_AUTHENTICATION_CODE_64			64
+		
+				
+---------------------------------------------------------------------------
+3	- check intra element code
+
+		DE003 - PROCESSING CODE					2+2+2=6
+		DE022 - POINT OF SERVICE ENTRY MODE			2+1=3
+---------------------------------------------------------------------------
+4	- check amount (12)
+
+		DE004 - TRANSACTION AMOUNT				12
+		DE005 - SETTLEMENT AMOUNT				12
+		DE006 - CARDHOLDER BILLING AMOUNT			12
+		DE082 - PROCESSING_FEE_AMOUNT_CREDITS			12
+		DE083 - TRANSACTION_FEE_AMOUNT_CREDITS			12
+		DE084 - PROCESSING_FEE_AMOUNT_DEBITS			12
+		DE085 - TRANSACTION_FEE_AMOUNT_DEBITS			12
+---------------------------------------------------------------------------
+7	- check year, month, day, hour, minute, second
+
+		DE007 - TRANSMISSION  DATE TIME		//    MM DD HH MM SS
+		DE012 - LOCAL TRANSACTION TIME		//          HH MM SS
+		DE013 - LOCAL TRANSACTION DATE		//    MM DD
+		DE014 - EXPIRATION DATE			// YY MM
+		DE015 - SETTLEMENT DATE			//    MM DD
+		DE016 - CONVERSION DATE			//    MM DD
+		DE017 - DATE CAPTURE			//    MM DD
+		DE073 - ACTION_DATE			// YY MM DD
+---------------------------------------------------------------------------
+8	- check fee amount
+
+		DE008 - CARDHOLDER BILLING FEE AMOUNT
+---------------------------------------------------------------------------
+9	- check rate
+
+		DE009 - SETTLEMENT CONVERSION RATE
+		DE010 - CARDHOLDER BILLING CONVERSION RATE
+---------------------------------------------------------------------------
+11	- check trace
+
+		DE011 - SYSTEM TRACE AUDIT NUMBER	// random generation + increment
+		DE023 - APPLICATION PAN SEQUNCE NUMBER			3
+---------------------------------------------------------------------------
+26	- check range
+
+		DE026 - POINT OF SERVICE CAPTURE CODE	// digits size	2
+		DE027 - AUTHORIZING IDENTIFICATION RESPONSE LENGTH	1
+---------------------------------------------------------------------------
+28	- check accounting entry + fee
+
+		DE028 - TRANSACTION FEE AMOUNT				1+8
+		DE029 - SETTLEMENT FEE AMOUNT				1+8
+		DE030 - TRANSACTION PROCESSING FEE AMOUNT		1+8
+		DE031 - SETTLEMENT PROCESSING FEE AMOUNT		1+8
+		DE097 - NET_SETTLEMENT_AMOUNT				1+16
+---------------------------------------------------------------------------
+35	- check track
+
+		DE035 - TRACK 2 DATA					z..37
+		DE036 - TRACK 3 DATA					n..104	
+		DE045 - TRACK 1 DATA					an..76			
+---------------------------------------------------------------------------
+37	- check composite
+
+		DE037 - RETRIEVAL REFERENCE NUMBER	julian year 		1
+							julian day		3
+							transmission hour	2 (DE007)
+							STAN			6 (DE011)
+
+		DE048 - Additional Data Private
+
+			ROUTING_TRANSIT_NUMBER				9
+			CUSTOMER_DEPOSIT_ACCOUNT_NUMBER			16..19
+			CHECK_WRITER_ADDRESS				1..30
+			CUSTOMER_IDENTIFICATION				1..40
+			CHECK_SERIAL_NUMBER				1..10
+			MERCHANT_IDENTIFICATION				1..15
+			CHECK_WRITER_NAME				1..30
+			CHECK_ACCEPTANCE_PROVIDER			1..2
+			TYPE_OF_CHECK					1
+			CUSTOMER_DATE_OF_BIRTH				6
+			EMPLOYEE_ID_NUMBER				1..10
+			CHECK_WRITER_PHONE_NUMBER			10
+			RAW_MICR_DATA					1..55
+
+			CHECK_ACCEPTANCE_RESPONSE
+
+				REASON_APPROVAL
+				REASON_REJECTED
+				REASON_NOT_APPROVED
+				LOST_STOLEN
+				ERROR_RETRY
+
+			DYNAMIC_KEY_EXCHANGE_CHECK_VALUE		5
+
+		DE054 - ADDITIONAL AMOUNTS
+
+			ACCOUNT_TYPE					2
+			AMOUNT_TYPE					2
+			CURRENCY_CODE					3
+			ACCOUNT_ENTRY					1
+			TRANSACTION_AMOUNT				12
+
+		DE063 - VIP PRIVATE USE
+
+			NETWORK_IDENTIFICATION				4
+			PREAUTHORIZATION_TIME_LIMIT			4
+			MESSAGE_REASON_CODE				4
+			STIP_SWITCH_REASON_CODE				4
+
+		DE090 - ORIGINAL_DATA_ELEMENTS
+
+			ORIGINAL_MESSAGE_TYPE				4
+			ORIGINAL_TRACE_NUMBER				6
+			ORIGINAL_TRANSMISSION_MONTH			2
+			ORIGINAL_TRANSMISSION_DAY			2
+			ORIGINAL_TRANSMISSION_HOUR			2
+			ORIGINAL_TRANSMISSION_MINUTE			2
+			ORIGINAL_TRANSMISSION_SECOND			2
+			ORIGINAL_ACQUIRER				11
+			ORIGINAL_FORWARDING_INSTITUTION_ID		11
+
+		DE104 - TRANSACTION_DESCRIPTION
+
+			INTENDED_USE_FLAG				3
+			BUSINESS_FLAG					3
+			TRACE_NUMBER					6
+
+		DE126 - VISA_PRIVATE_USE
+
+			BITMAP						8
+			AUTHENTICATION_RESULTS				2
+			AUTHENTICATION_RESULTS				2
+			CAVV_VALUE					3
+			UNPREDICTABLE_NUMBER				4
+			CVV2_PRESENCE_INDICATOR				1
+			RESPONSE_TYPE					1
+			CVV2_VALUE					4
+			TRANSPONDER_INDICATOR				1
+
+---------------------------------------------------------------------------
+43	- check name/location
+
+		DE043 - CARD ACCEPTOR NAME/LOCATION				40
+
+			NAME						25
+			CITY						13
+			COUNTRY						2
+
+		DE123 - ADDRESS_VERIFICATION_DATA
+
+			STREET_ADDRESS					1..30
+			CITY_NAME					1..20
+			STATE_CODE					2
+			COUNTRY_CODE					3
+			POSTAL_ZIP_CODE					5..9
+		
+---------------------------------------------------------------------------
+55	- check emv tags
+
+		DE055 - EMV TAG
+---------------------------------------------------------------------------
+74	- ACCUM number
+
+		DE074 - NUMBER_CREDITS					10
+		DE075 - REVERSAL_NUMBER_CREDITS				10
+		DE076 - NUMBER_DEBITS					10
+		DE077 - REVERSAL_NUMBER_DEBITS				10
+		DE078 - TRANSFER_NUMBER					10
+		DE079 - REVERSAL_TRANSFER_NUMBER			10
+		DE080 - INQUIRIES_NUMBER				10
+		DE081 - NUMBER_AUTHORIZATIONS				10
+----------------------------------------------------------------------------
+86	- check amount (16)
+
+		DE086 - AMOUNT_CREDITS					16
+		DE087 - REVERSAL_AMOUNT_CREDITS				16
+		DE088 - AMOUNT_DEBITS					16
+		DE089 - REVERSAL_AMOUNT_DEBITS				16
+----------------------------------------------------------------------------
+95	- VARIOUS AMOUNTS
+
+		DE095 - REPLACEMENT_AMOUNTS
+
+			ACTUAL_TRANSACTION_AMOUNT			12
+			ACTUAL_SETTLEMENT_AMOUNT			12
+			ACTUAL_TRANSACTION_FEE_AMOUNT			9
+			ACTUAL_SETTLEMENT_FEE_AMOUNT			9
+---------------------------------------------------------------------------
+98
+
+		DE098 - PAYEE						25
+		DE101 - FILE_NAME					17
+		DE102 - ACCOUNT_IDENTIFICATION_1			1..28
+		DE103 - ACCOUNT_IDENTIFICATION_2			1..28
+
+
+			
+
+
+
+
+			
+
+					
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

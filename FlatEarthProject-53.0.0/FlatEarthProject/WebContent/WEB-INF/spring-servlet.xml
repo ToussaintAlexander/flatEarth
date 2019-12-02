@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 	
+
+	xmlns="http://www.springframework.org/schema/beans"  
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    	xmlns:p="http://www.springframework.org/schema/p"  
+    	xmlns:context="http://www.springframework.org/schema/context"  
+    	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+		http://www.springframework.org/schema/context  
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">  
+
+		<context:annotation-config/>
+
+		<context:component-scan base-package="com"></context:component-scan>
+		
+		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+			<property name="prefix" value="/WEB-INF/jsp/"></property>
+			<property name="suffix" value=".jsp"></property>
+		</bean>
+
+		<bean id="messageSource"
+			class="org.springframework.context.support.ResourceBundleMessageSource">
+			<property name="basename" value="validation" />
+		</bean>
+
+    	<bean id="colourValidator" class="com.region01.cardholder.people.validator.CardholderValidator" />
+
+		<bean id="ds1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+			<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+			<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+			<property name="username" value="system"></property>
+			<property name="password" value="secret"></property>
+		</bean>
+
+		<bean id="ds2" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+			<property name="url" value="jdbc:mysql://localhost:3306/test" />
+			<property name="username" value="root" />
+			<property name="password" value="Arec1b0!" />
+		</bean>
+
+		<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">
+			<property name="dataSource" ref="ds1"></property>
+		</bean>
+   					
+		<!-- Simulation DAO -->	
+
+		<bean id="simulationDao" class="com.main.execute.simulation.dao.SimulationDaoImpl"> 	
+			<property name="template" ref="jt"></property>						
+		</bean>																	
+		
+		<!-- Regression DAO -->	
+
+		<bean id="featureDao" class="com.main.testing.feature.dao.FeatureDaoImpl">	
+			<property name="template" ref="jt"></property>						
+		</bean>																	
+
+		<bean id="regressionDao" class="com.main.testing.regression.dao.RegressionDaoImpl">	
+			<property name="template" ref="jt"></property>						
+		</bean>					
+  					
+		<!-- Region 01 Cardholder People DAO -->	
+
+		<bean id="cardholderDao" class="com.region01.cardholder.people.dao.CardholderDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 01 Cardholder Statement Checking DAO -->	
+
+		<bean id="checkingSummaryDao" class="com.region01.cardholder.statement.checking.dao.CheckingSummaryDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="checkingDetailDao" class="com.region01.cardholder.statement.checking.dao.CheckingDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="checkingChargeDao" class="com.region01.cardholder.statement.checking.dao.CheckingChargeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 01 Cardholder Statement Credit DAO -->	
+
+		<bean id="creditSummaryDao" class="com.region01.cardholder.statement.credit.dao.CreditSummaryDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="creditDetailDao" class="com.region01.cardholder.statement.credit.dao.CreditDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="creditChargeDao" class="com.region01.cardholder.statement.credit.dao.CreditChargeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 01 Cardholder Statement Savings DAO -->	
+
+		<bean id="savingsSummaryDao" class="com.region01.cardholder.statement.savings.dao.SavingsSummaryDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="savingsDetailDao" class="com.region01.cardholder.statement.savings.dao.SavingsDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="savingsChargeDao" class="com.region01.cardholder.statement.savings.dao.SavingsChargeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 02 Card DAO -->
+
+		<bean id="amountDao" class="com.region02.bank.issuer.card.chip.dao.AmountDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="applicationDao" class="com.region02.bank.issuer.card.chip.dao.ApplicationDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+									 
+		<bean id="issuerDao" class="com.region02.bank.issuer.card.chip.dao.IssuerDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+										   
+		<bean id="keysDao" class="com.region02.bank.issuer.card.chip.dao.KeysDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+									   
+		<bean id="verificationDao" class="com.region02.bank.issuer.card.chip.dao.VerificationDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 02 Chip Card DAO -->
+
+		<bean id="chipCardDao" class="com.region02.bank.issuer.card.chipcard.dao.ChipCardDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 02 Card Magnetic Stripe DAO -->
+		
+		<bean id="track1Dao" class="com.region02.bank.issuer.card.magstripe.dao.Track1DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="track2Dao" class="com.region02.bank.issuer.card.magstripe.dao.Track2DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="track3Dao" class="com.region02.bank.issuer.card.magstripe.dao.Track3DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+				
+		<!-- Region 03 Merchant Product DAO -->
+
+		<bean id="productDao" class="com.region03.merchant.product.dao.ProductDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+					
+		<!-- Region 04 Merchant Terminal DAO -->
+		
+		<bean id="currencyDao" class="com.region04.merchant.terminal.dao.CurrencyDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="terminalDao" class="com.region04.merchant.terminal.dao.TerminalDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		 
+		<bean id="transactionDao" class="com.region04.merchant.terminal.dao.TransactionDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 05 Merchant Retailer DAO -->
+		
+		<bean id="retailerDao" class="com.region05.merchant.retailer.dao.RetailerDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 05 Merchant Retailer Invoice Part DAO -->
+		
+		<bean id="invoicePart1Dao" class="com.region05.merchant.retailer.invoice.dao.InvoicePart1DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+	
+		<bean id="invoicePart2Dao" class="com.region05.merchant.retailer.invoice.dao.InvoicePart2DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+			
+		<bean id="invoicePart3Dao" class="com.region05.merchant.retailer.invoice.dao.InvoicePart3DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>		
+
+		<!-- Region 06 Bank Acquirer DAO -->
+									   
+		<bean id="acquirerDao" class="com.region06.bank.acquirer.client.dao.AcquirerDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 06 Bank Acquirer Master File DAO -->
+									   
+		<bean id="acquirerMasterFileDao" class="com.region06.bank.acquirer.master.dao.AcquirerMasterFileDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 07 Processor Acquirer DAO -->
+		
+		<bean id="transform1Dao" class="com.region07.processor.acquirer.processor.dao.Transform1DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 08 Association Certification DAO -->	
+  		
+		<bean id="certificationDao" class="com.region08.association.certification.dao.CertificationDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 08 Association Letter DAO -->	
+
+		<bean id="acronymDao" class="com.region08.association.letter.dao.AcronymDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="appendixDao" class="com.region08.association.letter.dao.AppendixDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="businessOverviewDao" class="com.region08.association.letter.dao.BusinessOverviewDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="coverDao" class="com.region08.association.letter.dao.CoverDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="empDao" class="com.region08.association.letter.dao.EmpDao">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="letterDao" class="com.region08.association.letter.dao.LetterDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="messageTypeImpactDao" class="com.region08.association.letter.dao.MessageTypeImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+								
+		<bean id="platformImpactDao" class="com.region08.association.letter.dao.PlatformImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="processingImpactDao" class="com.region08.association.letter.dao.ProcessingImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+			
+		<bean id="processorImpactDao" class="com.region08.association.letter.dao.ProcessorImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+										
+		<bean id="regionImpactDao" class="com.region08.association.letter.dao.RegionImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="relatedDocumentDao" class="com.region08.association.letter.dao.RelatedDocumentDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="releaseOverviewDao" class="com.region08.association.letter.dao.ReleaseOverviewDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+				
+		<bean id="sectionDao" class="com.region08.association.letter.dao.SectionDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="subSectionDao" class="com.region08.association.letter.dao.SubSectionDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+ 				
+		<bean id="systemImpactDao" class="com.region08.association.letter.dao.SystemImpactDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<!-- Region 08 Association Letter Requirements DAO -->	
+
+		<bean id="fieldEditDetailDao" class="com.region08.association.letter.requirements.dao.FieldEditDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="fieldEditElementDao" class="com.region08.association.letter.requirements.dao.FieldEditElementDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="fieldEditHeaderDao" class="com.region08.association.letter.requirements.dao.FieldEditHeaderDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+  				
+		<bean id="fieldEditRoutineDao" class="com.region08.association.letter.requirements.dao.FieldEditRoutineDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="rejectCodeDao" class="com.region08.association.letter.requirements.dao.RejectCodeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+ 						
+		<bean id="usageDao" class="com.region08.association.letter.requirements.dao.UsageDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+ 		
+		<bean id="validCodeDao" class="com.region08.association.letter.requirements.dao.ValidCodeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+ 		<!-- Region 08 Association Scheme DAO -->		
+ 				
+		<bean id="schemeDao" class="com.region08.association.scheme.dao.SchemeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+  		
+  		<!-- Region 08 Association Template DAO -->	
+ 		
+		<bean id="templateDao" class="com.region08.association.template.dao.TemplateDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+ 		
+		<!-- Region 09 Processor Issuer Editor DAO -->
+ 		
+		<bean id="elementEditorScreenDao" class="com.region09.processor.issuer.editor.dao.ElementEditorDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="ruleDetailEditorDao" class="com.region09.processor.issuer.editor.dao.RuleDetailEditorDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="ruleHeaderEditorDao" class="com.region09.processor.issuer.editor.dao.RuleHeaderEditorDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 09 Processor Issuer Engine DAO -->
+
+		<bean id="engineDao" class="com.region09.processor.issuer.engine.dao.EngineDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 09 Processor Issuer Explain DAO -->
+
+		<bean id="dualElementExplainDao" class="com.region09.processor.issuer.explain.dao.DualElementExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="dualRuleDetailExplainDao" class="com.region09.processor.issuer.explain.dao.DualRuleDetailExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="dualRuleHeaderExplainDao" class="com.region09.processor.issuer.explain.dao.DualRuleHeaderExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="singleElementExplainDao" class="com.region09.processor.issuer.explain.dao.SingleElementExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="singleRuleDetailExplainDao" class="com.region09.processor.issuer.explain.dao.SingleRuleDetailExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="singleRuleHeaderExplainDao" class="com.region09.processor.issuer.explain.dao.SingleRuleHeaderExplainDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- Region 09 Processor Issuer Knowledge DAO -->
+				
+		<bean id="binLevelDao" class="com.region09.processor.issuer.knowledge.dao.BinLevelDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+			
+		<bean id="cardVerificationDao" class="com.region09.processor.issuer.knowledge.dao.CardVerificationDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+					
+		<bean id="domesticLimitDaoDao" class="com.region09.processor.issuer.knowledge.dao.DomesticLimitDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+					
+		<bean id="foreignLimitDaoDao" class="com.region09.processor.issuer.knowledge.dao.ForeignLimitDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>				
+
+		<!-- Region 09 Processor Issuer Transform DAO -->
+				
+		<bean id="transform2Dao" class="com.region09.processor.issuer.processor.dao.Transform2DaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+				
+		<!-- Region 10 Issuers Client DAO -->	
+
+		<bean id="issuersDao" class="com.region10.bank.issuer.client.dao.IssuersDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+				
+		<!-- Region 10 Issuers Client DAO -->	
+
+		<bean id="issuerMasterFileDao" class="com.region10.bank.issuer.master.dao.IssuerMasterFileDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- System Configuration Address DAO -->
+		
+		<bean id="addressDao" class="com.system.configuration.address.dao.AddressDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- System Configuration Properties DAO -->
+
+		<bean id="databasePropertiesDao" class="com.system.configuration.properties.dao.DatabasePropertiesDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="filePropertiesDao" class="com.system.configuration.properties.dao.FilePropertiesDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- System Language DAO -->	
+		
+		<bean id="batchDao" class="com.system.language.batch.dao.BatchDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="codeDao" class="com.system.language.code.dao.CodeDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="expressionDao" class="com.system.language.expression.dao.ExpressionDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="loggerDao" class="com.system.language.logger.dao.LoggerDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+							   
+		<bean id="messageDao" class="com.system.language.message.dao.MessageDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+	
+		<!-- System Message Element DAO -->	
+	
+		<bean id="elementDao" class="com.system.message.element.dao.ElementDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="routineDao" class="com.system.message.routine.dao.RoutineDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="ruleDetailDao" class="com.system.message.rule.detail.dao.RuleDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+									   
+		<bean id="ruleHeaderDao" class="com.system.message.rule.header.dao.RuleHeaderDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="validateDetailDao" class="com.system.message.validate.detail.dao.ValidateDetailDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+		
+		<bean id="validateHeaderDao" class="com.system.message.validate.header.dao.ValidateHeaderDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<!-- System Security Authentication DAO -->	
+													   
+		<bean id="passwordDao" class="com.system.security.authentication.password.dao.PasswordDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>	
+															   
+		<!-- System Security Authorization DAO -->		
+						
+		<bean id="screenFieldDao" class="com.system.security.authorization.screenfield.dao.ScreenFieldDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+
+		<bean id="menuDao" class="com.system.security.authorization.menu.dao.MenuDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+			   
+		<bean id="profileDao" class="com.system.security.authorization.profile.dao.ProfileDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>					
+						
+		<bean id="screenDao" class="com.system.security.authorization.screen.dao.ScreenDaoImpl">
+			<property name="template" ref="jt"></property>
+		</bean>
+	
+</beans>

@@ -1,0 +1,11 @@
+
+Accounting and Finance		Financial Accountant
+Information Technology		Software Engineer
+Client Services			Business Analyst
+Human Resource Management	HR Consultant
+Sales and Marketing  		Product Manager
+Production			Quality Technician
+Purchasing Management		Inventory Analyst
+Quality Control			Calibration Technician
+Research and Development   	Industrial Designer
+Shipping and Receiving		Distribution Specialist

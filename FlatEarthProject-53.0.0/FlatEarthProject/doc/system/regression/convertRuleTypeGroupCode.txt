@@ -1,0 +1,45 @@
+	/******************************************************************************
+	 ******************************************************************************
+	 */
+	public String convertRuleTypeCode (int value) {
+
+		String ruleType = null;
+		
+		switch (value) {
+		
+			case UNASSIGNED_RULE_TYPE	:	ruleType = "Unassigned Type Rule";	break;
+			case BITMAP_RULE_TYPE		:	ruleType = "Bitmap Type Rule";		break;
+			case COMPOSITE_RULE_TYPE	:	ruleType = "Composite Type Rule";	break;
+			case DATE_TIME_RULE_TYPE	:	ruleType = "Year Date Type Rule";	break;
+			case CURRENCY_RULE_TYPE		:	ruleType = "Currency Type Rule";	break;
+			
+			default						:	ruleType = "Unknown Type Rule";		break;
+				
+		}
+		
+		return ruleType;
+		
+	}
+	/******************************************************************************
+	 ******************************************************************************
+	 */
+	public String convertRuleGroupCode (int value) {
+
+		String ruleGroupStr = null;
+		
+		switch (value) {
+		
+			case UNASSIGNED_RULE_GROUP	:	ruleGroupStr = "Unknown Group Rule";		break;
+			case BITMAP_RULE_GROUP		: 	ruleGroupStr = "Bitmap Group Rule";			break;
+			case CODE_RULE_GROUP		:	ruleGroupStr = "Code Group Rule";			break;
+			case DATE_TIME_RULE_GROUP	:	ruleGroupStr = "Date Time Group Rule";		break;
+			case CURRENCY_RULE_GROUP	:	ruleGroupStr = "Currency Group Rule";		break;
+			case RATE_RULE_GROUP		:	ruleGroupStr = "Rate Group Rule";			break;
+			
+			default						:	ruleGroupStr = "Unknown Group Rule";		break;
+			
+		}
+		
+		return ruleGroupStr;
+		
+	}	

@@ -1,0 +1,26 @@
+
+==================================================================================  
+
+Edit Cardholder
+  
+First Name :   James	Middle Name :  X 	Last Name :  Smith
+
+Social Security :  123456789
+ 
+Company 	    : Apple Computers		Department 	     :  Finance
+Title   	    : Accountant			Salary     	     :  30,120
+
+Marital Status 	:  Single			    Date Of Birth 	 :  200-12-31
+Education      	:  BSCS				    Age 		     :  35 Years		
+
+Interests 	    :  Hiking
+
+User Name 	    :  JSMITH			    Secret  Hint  	 :  4 digits			
+User Id        	:  100,250			    Clear Text Pin 	 :  1234
+
+Create User 	:  TALEXAND			    Timestamp 		 :  2018-12-31 23:59:59.0
+Modify User 	:  TALEXAND			    Timestamp        :  2018-12-31 23:59:59.0
+
+Prv Page	Insert	Select	Update	Delete	Nxt Page
+
+==================================================================================  
