@@ -1,0 +1,12 @@
+delete from ISSUERS_TABLE;
+insert into ISSUERS_TABLE values ( 0, 'IBAN0000', 'BIC0000', 450000, 'JP Morgan Chase Bank' 	, '270 Park Avenue'				, 'New York City'	, 'New York State'		,'840','10017'	,'2122700589' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0100', 'BIC0100', 450100, 'Rabobank UA' 				, 'Rabotoren'					, 'Utrecht'			, 'Utrecht Province'	,'528','00000'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0200', 'BIC0200', 450200, 'HSBC Holdings PLC'		, 'HSBC Tower'					, 'London'			, 'London Region'		,'826','00000'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0300', 'BIC0300', 450300, 'ANZ Banking Group'		, '833 Collins Street'			, 'Melbourne'		, 'Victoria'			,'036','00000'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0400', 'BIC0400', 450400, 'Bank of China'			, '1 Fuxingmennei Street'		, 'Beijing'			, 'Hebei Province'		,'156','100818'	,'4006695566' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0500', 'BIC0500', 450500, 'Royal Bank of Canada'		, '130 Centre Street'			, 'Meadow Lake'		, 'Saskatchewan'		,'124','4738'	,'3062365623' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0600', 'BIC0600', 450600, 'BNP Paribas'				, 'Boulevard des Italiens'		, 'Paris'			, 'Île-de-France'		,'250','94104'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0700', 'BIC0700', 450700, 'KBC Bank N.V.'			, 'Bahnhofstrasse 45'			, 'Brussels'		, 'Brussels-Capital'	,'056','8001'	,'8003549103' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0800', 'BIC0800', 450800, 'Deutsche Bank'			, 'Deutsche Bank Twin Towers'	, 'Frankfurt'		, 'Hesse State'			,'276','00000'	,'8662493302' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ISSUERS_TABLE values ( 0, 'IBAN0900', 'BIC0900', 450900, 'Banco Bradesco'			, 'Osasco,'						, 'São Paulo'		, 'ABC Region'			,'076','4002'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

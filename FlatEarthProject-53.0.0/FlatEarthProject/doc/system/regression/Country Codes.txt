@@ -1,0 +1,67 @@
+	// DE 019 SF 00	Acquiring Institution Country Code	n 3
+		// DE 020 SF 00	Pan Extended Country Code
+		// DE 021 SF 00	Forwarding Institution Country Code
+		// DE 049 SF 00 Transaction Currency Code
+		// DE 050 SF 00 Settlement Currency Code
+		// DE 051 SF 00 Cardholder Billing Currency Code
+		// DE 054 SF 02 Currency Code 
+		// DE 055 SF 5F2A Transaction Currency Code
+		// DE 055 SF 9F1A Terminal Country Code
+		// DE 059 SF 01 National POS Geographic Data Country Code positions 15-17
+		
+		CodeBean codeTableRow19000 = new CodeBean( 0,  19,  -1,  36, "Australia"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19001 = new CodeBean( 0,  19,  -1,  76, "Brazil"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19002 = new CodeBean( 0,  19,  -1, 124, "Canada"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19003 = new CodeBean( 0,  19,  -1, 156, "China"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19004 = new CodeBean( 0,  19,  -1, 250, "France"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19005 = new CodeBean( 0,  19,  -1, 276, "Germany"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19006 = new CodeBean( 0,  19,  -1, 356, "India"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19007 = new CodeBean( 0,  19,  -1, 372, "Ireland"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19008 = new CodeBean( 0,  19,  -1, 380, "Italy"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19009 = new CodeBean( 0,  19,  -1, 392, "Japan"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		
+		CodeBean codeTableRow19010 = new CodeBean( 0,  19,  -1, 438, "Liechtenstein"				, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19011 = new CodeBean( 0,  19,  -1, 484, "Mexico"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19012 = new CodeBean( 0,  19,  -1, 554, "New Zealand"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19013 = new CodeBean( 0,  19,  -1, 591, "Panama"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19014 = new CodeBean( 0,  19,  -1, 608, "Philippines"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19015 = new CodeBean( 0,  19,  -1, 630, "Puerto Rico"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19016 = new CodeBean( 0,  19,  -1, 634, "Qatar"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19017 = new CodeBean( 0,  19,  -1, 643, "Russian Federation"			, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19018 = new CodeBean( 0,  19,  -1, 682, "Saudi Arabia"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19019 = new CodeBean( 0,  19,  -1, 702, "Singapore"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		
+		CodeBean codeTableRow19020 = new CodeBean( 0,  19,  -1, 706, "Somalia"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19021 = new CodeBean( 0,  19,  -1, 724, "Spain"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19022 = new CodeBean( 0,  19,  -1, 756, "Switzerland"					, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19023 = new CodeBean( 0,  19,  -1, 818, "Egypt"						, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		CodeBean codeTableRow19024 = new CodeBean( 0,  19,  -1, 840, "United States of America"		, "Description", CREATE_USER,CREATE_TIMESTAMP,MODIFY_USER,MODIFY_TIMESTAMP);
+		
+		codeTableRowList.add(codeTableRow19000);
+		codeTableRowList.add(codeTableRow19001);
+		codeTableRowList.add(codeTableRow19002);
+		codeTableRowList.add(codeTableRow19003);
+		codeTableRowList.add(codeTableRow19004);
+		codeTableRowList.add(codeTableRow19005);
+		codeTableRowList.add(codeTableRow19006);
+		codeTableRowList.add(codeTableRow19007);
+		codeTableRowList.add(codeTableRow19008);
+		codeTableRowList.add(codeTableRow19009);
+		
+		codeTableRowList.add(codeTableRow19010);
+		codeTableRowList.add(codeTableRow19011);
+		codeTableRowList.add(codeTableRow19012);
+		codeTableRowList.add(codeTableRow19013);
+		codeTableRowList.add(codeTableRow19014);
+		codeTableRowList.add(codeTableRow19015);
+		codeTableRowList.add(codeTableRow19016);
+		codeTableRowList.add(codeTableRow19017);
+		codeTableRowList.add(codeTableRow19018);
+		codeTableRowList.add(codeTableRow19019);
+		
+		codeTableRowList.add(codeTableRow19020);
+		codeTableRowList.add(codeTableRow19021);
+		codeTableRowList.add(codeTableRow19022);
+		codeTableRowList.add(codeTableRow19023);
+		codeTableRowList.add(codeTableRow19024);
+		

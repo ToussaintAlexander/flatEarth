@@ -1,0 +1,5 @@
+delete from LOGGER_TABLE;
+insert into LOGGER_TABLE values ( 0, 'Logger Name 1', 'Handler Type 1', 'File Handler 1', 'Server Name 1', 'Port Number 1', 'Output Stream 1', 'File Name Pattern 1', 1, 999, 12345678, 12345678, 1,'FILENAME VALUE', 1, 'Source Class 1', 'Source Method 1', 'Resource Bundle 1', 1, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into LOGGER_TABLE values ( 0, 'Logger Name 2', 'Handler Type 2', 'File Handler 2', 'Server Name 2', 'Port Number 2', 'Output Stream 2', 'File Name Pattern 2', 2, 999, 12345678, 12345678, 2,'FILENAME VALUE', 2, 'Source Class 2', 'Source Method 2', 'Resource Bundle 2', 2, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into LOGGER_TABLE values ( 0, 'Logger Name 3', 'Handler Type 3', 'File Handler 3', 'Server Name 3', 'Port Number 3', 'Output Stream 3', 'File Name Pattern 3', 3, 999, 12345678, 12345678, 3,'FILENAME VALUE', 3, 'Source Class 3', 'Source Method 3', 'Resource Bundle 3', 3, 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

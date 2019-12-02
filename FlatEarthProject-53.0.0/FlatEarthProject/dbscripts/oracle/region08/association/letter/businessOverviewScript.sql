@@ -1,0 +1,12 @@
+delete from BUSINESS_OVERVIEW_TABLE;
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #0', 'Business Overview Sentence #0', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #1', 'Business Overview Sentence #1', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #2', 'Business Overview Sentence #2', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #3', 'Business Overview Sentence #3', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #4', 'Business Overview Sentence #4', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #5', 'Business Overview Sentence #5', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #6', 'Business Overview Sentence #6', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #7', 'Business Overview Sentence #7', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #8', 'Business Overview Sentence #8', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into BUSINESS_OVERVIEW_TABLE values ( 0, CURRENT_DATE, 1, 0, 1, 1, 1, 'Business Overview Title #9', 'Business Overview Sentence #9', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

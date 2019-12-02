@@ -1,0 +1,44 @@
+Technical Letter 17.1 Menu
+
+	0100/0110	Authorization Transaction		POS Terminal for Cardholder Purchase Authorization
+
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Manual Key Entry PAN] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Manual Key Entry PAN] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Manual Key Entry PAN] Terminal [Pad is Down]
+
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Magnetic Stripes Read] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Magnetic Stripes Read] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Magnetic Stripes Read] Terminal [Pad is Down]
+
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Contactless Device-Read] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Contactless Device-Read] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Credit] using [Contactless Device-Read] Terminal [Pad is Down]
+
+			Expiration Date
+			Good, Bad PIN
+
+			technical letter 19.2
+			123456789012345667890
+
+
+	0200/0210	Financial Transaction			Request for Funds from ATM or POS Device
+
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Manual Key Entry PAN] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Manual Key Entry PAN] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Manual Key Entry PAN] Terminal [Pad is Down]
+
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Magnetic Stripes Read] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Magnetic Stripes Read] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Magnetic Stripes Read] Terminal [Pad is Down]
+
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Contactless Device-Read] Terminal [Forwarding Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Contactless Device-Read] Terminal [Can't Forward Online PIN]
+	0100/0110	[Purchase of Goods or Services] on [Debit] using [Contactless Device-Read] Terminal [Pad is Down]
+
+	0400/0410	Reverse Transaction			Reverses Transaction
+
+	0800/0810	Network Management Transaction		Network Command
+
+	All MITI	Execute Auths, Financial, Reversals	Execute All Transactions
+
+	

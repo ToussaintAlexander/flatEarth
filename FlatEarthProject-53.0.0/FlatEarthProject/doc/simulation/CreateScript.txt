@@ -1,0 +1,100 @@
+package com.system.message.utilties.algorithm;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import com.system.message.utilties.message.CodeBean;
+
+public class CreateScript {
+
+	public static void display () {
+		
+		List<CodeBean> codeList =  new CodeTableUtils().createCodes2();
+		
+		Iterator<CodeBean> codeListIterator = codeList.iterator();
+		
+		while (codeListIterator.hasNext()) {
+			
+			CodeBean codeBean = codeListIterator.next();
+			
+			if   (codeBean.getCodeField() == 3
+			||    codeBean.getCodeField() == 22   
+			||    codeBean.getCodeField() == 25   
+			||    codeBean.getCodeField() == 49 
+			||    codeBean.getCodeField() == 54 
+			||    codeBean.getCodeField() == 60) {
+			 
+				System.out.println(	codeBean.getCodeField()		
+						      	  + " " + " "	
+						      	  + codeBean.getCodeSubfield() 	
+						      	  + " " + " "  	
+						      	  + codeBean.getCodeValue() 		
+						      	  + " " + " " 	
+						      	  + codeBean.getCodeName() 		
+						      	  );
+			}
+			
+		}
+		
+	}
+	/******************************************************************************************
+	 ******************************************************************************************
+	 */
+	public List<Integer> getScriptElementIdList () {
+		
+		List<CodeBean> codeList =  new CodeTableUtils().createCodes2();
+		
+		List<Integer> reorderList =  new ArrayList<Integer>();
+		
+		Iterator<CodeBean> codeListIterator = codeList.iterator();
+		
+		int index = 0;
+		
+		while (codeListIterator.hasNext()) {
+			
+			CodeBean codeBean = codeListIterator.next();
+			 
+				System.out.println(	index++					// Must be from database codeBean.getId()		
+						      	  + " " + " "	
+						      	  + codeBean.getCodeField()	
+						      	  + " " + " "	
+						      	  + codeBean.getCodeSubfield() 	
+						      	  + " " + " "  	
+						      	  + codeBean.getCodeValue() 		
+						      	  + " " + " " 	
+						      	  + codeBean.getCodeName() 		
+						      	  );
+			
+			if   (codeBean.getCodeField() == 3
+			||    codeBean.getCodeField() == 22   
+			||    codeBean.getCodeField() == 25   
+			||    codeBean.getCodeField() == 49 
+			||    codeBean.getCodeField() == 54 
+			||    codeBean.getCodeField() == 60) {
+			 
+//				reorderList.add(codeBean.getId());
+				reorderList.add(index);
+	
+			}
+			
+		}
+		
+		return reorderList;
+		
+	}
+	/******************************************************************************************
+	 ******************************************************************************************
+	 */
+	public static void main (String [] args) {
+
+		//display();
+			
+		List<Integer> reorderList = new CreateScript().getScriptElementIdList ();
+		
+		System.out.println(reorderList);
+		
+		//new Permutation().reorder1(reorderList, reorderList.size(), null, true);
+	
+	}
+}

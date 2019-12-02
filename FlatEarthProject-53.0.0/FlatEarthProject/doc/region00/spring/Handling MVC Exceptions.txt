@@ -1,0 +1,16 @@
+@RequestMapping(value = "/getApprovedBulletins", method = RequestMethod.POST)
+    public ModelAndView getApprovedBulletins(@ModelAttribute("bulletin") Bulletin bulletin,
+            BindingResult result) {
+        try {
+            bulletins = bulletinDAO.getApprovedBulletins();
+            mav.setViewName("EnterBulletin");
+            if (bulletins != null) {
+                mav.addObject("bulletins", bulletins);
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            mav.setViewName("FailurePage");
+        }
+ 
+        return mav;
+    }

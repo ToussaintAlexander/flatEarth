@@ -1,0 +1,74 @@
+( 0,  3, 0, '10', 'Purchase of Goods or Services'	 
+( 1,  3, 0, '20', 'Withdrawal/Cash Advance'		 
+( 2,  3, 0, '30', 'Cash Check'						 
+( 3,  3, 0, '40', 'Deposit (Credit)'				 
+( 4,  3, 0, '50', 'Available Funds Inquiry'		 
+( 5,  3, 0, '60', 'Transfer'						 
+( 6,  3, 0, '70', 'Bill Payments'
+					 
+( 0,  3, 1, '10', 'Not Specified'			 
+( 1,  3, 1, '20', 'Savings Account'		 
+( 2,  3, 1, '30', 'Checking Account'		 
+( 3,  3, 1, '40', 'Credit Card Account'	 
+( 4,  3, 1, '50', 'Cash Benefits Account'
+	 
+( 0,  3, 2, '10', 'Not Specified'			 
+( 1,  3, 2, '20', 'Savings Account'		 
+( 2,  3, 2, '30', 'Checking Account'		 
+( 3,  3, 2, '40', 'Credit Card Account'	 
+( 4,  3, 2, '50', 'Cash Benefits Account'
+===========================================
+( 0,  22,  0, '10', 'Unknown or Terminal Not Used'							 
+( 1,  22,  0, '15', 'Manual Key Entry PAN'									 
+( 2,  22,  0, '20', 'Magnetic Stripes Read; CVV Checking Possible'			 
+( 3,  22,  0, '25', 'Bar Code Reader'										 
+( 4,  22,  0, '30', 'IC Cards Read; CVV or iCVV Checking Possible'			 
+( 5,  22,  0, '35', 'Contactless Device-Read Using VSDC Chip Data Rules'	 
+( 6,  22,  0, '40', 'Store and Forward'									 
+( 7,  22,  0, '45', 'MICR Reader'											 
+( 8,  22,  0, '50', 'Magnetic Stripe Read including Track 1 and 2'			 
+( 9,  22,  0, '55', 'Contactless Device-Read Originated using Mag Stripe'
+	 
+( 0,  22,  1, '1', 'Unknown'												 
+( 1,  22,  1, '2', 'POS Terminal Can Accept and Forward Online PIN'		 
+( 2,  22,  1, '3', 'POS Terminal Cannot Accept and Forward Online PIN'	 
+( 3,  22,  1, '4', 'Terminal PIN Pad is Down'							 
+( 4,  22,  1, '5', 'Reserved for Future Use'
+===========================================
+( 0,  25,  -1, '10', 'Normal Transaction'												 
+( 1,  25,  -1, '15', 'Customer Not Present'												 
+( 2,  25,  -1, '20', 'Unattended Cardholder-Activated Environments PIN Data Present'	 
+( 3,  25,  -1, '25', 'Merchant Suspicious of Transaction'								 
+( 4,  25,  -1, '30', 'Customer Present, Card Not Present'								 
+( 5,  25,  -1, '35', 'Mail/Telephone Order'												 
+( 6,  25,  -1, '40', 'Customer Identity Verified (Check Acceptance Only)'				 
+( 7,  25,  -1, '45', 'Suspected Fraud'													 
+( 8,  25,  -1, '50', 'Representment of Item'											 
+( 9,  25,  -1, '55', 'Chargeback (validation or advice)'								 
+( 10,  25,  -1, '60', 'Address/CVV2/Account without Verification'						 
+( 11,  25,  -1, '65', 'POS Check Original Full Transaction or Adjustment'				 
+( 12,  25,  -1, '70', 'Chargeback Reversal'												 
+( 13,  25,  -1, '75', 'Electronic Commerce Request by Public Network'					 
+( 14,  25,  -1, '80', 'Card Present, Magnetic Stripe Cannot Be Read'	
+===========================================					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								 	 

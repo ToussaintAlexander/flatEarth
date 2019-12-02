@@ -1,0 +1,19 @@
+	private int acquirerIdentifier;				 
+	private String merchantIdentifier;			 
+	private String terminalIdentification;	
+
+	private short statusInformation;	private int countryCode;	
+	private int formFactorIndicator;	private int sequenceCounter;	 
+	private int pointofServiceEntryMode;	private String authorizationResponseCode;
+
+	private int transactionType;		private int transactionDate;
+	private int transactionPIN;		private int transactionTime;	 
+
+	private int currencyCode;		private int ReferenceCurrencyCode;				 
+	private int currencyExponent;		private int ReferenceCurrencyExponent;		
+
+	
+
+			 
+				 
+				 

@@ -1,0 +1,5 @@
+delete from CARDHOLDER_NAME_TABLE;
+
+insert into CARDHOLDER_NAME_TABLE values ( 0, 'James', 'James', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+commit;

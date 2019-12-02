@@ -1,0 +1,8 @@
+		
+Message Menu
+
+	Element
+	Rule Header
+	Rule Detail	 
+	Validate Header
+	Validate Detail

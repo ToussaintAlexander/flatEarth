@@ -1,0 +1,33 @@
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'Cryptography Menu'		, 'Character Encoding Menu'							 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'Cryptography Menu'		, 'Common Cryptography Menu'						 
+insert into MENU_TABLE values ( 0, 100, 150, 2, 'Cryptography Menu'		, 'Payments Cryptography Menu'						 
+insert into MENU_TABLE values ( 0, 100, 150, 3, 'Cryptography Menu'		, 'Europay, MasterCard, Visa Menu'					 
+insert into MENU_TABLE values ( 0, 100, 150, 4, 'Cryptography Menu'		, 'HSM Cryptography Menu'							 
+insert into MENU_TABLE values ( 0, 100, 150, 5, 'Cryptography Menu'		, 'Exit'											 
+
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'Character Encoding Menu'	, 'ASCII to EBCDIC Form'							 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'Character Encoding Menu'	, 'ASCII Text to Binary'							 
+insert into MENU_TABLE values ( 0, 100, 150, 2, 'Character Encoding Menu'	, 'ASCII Text to Hexadecimal'						 
+insert into MENU_TABLE values ( 0, 100, 150, 3, 'Character Encoding Menu'	, 'EBCDIC Text to Binary'							 
+insert into MENU_TABLE values ( 0, 100, 150, 4, 'Character Encoding Menu'	, 'EBCDIC Text to Hexadecimal'						 
+insert into MENU_TABLE values ( 0, 100, 150, 5, 'Character Encoding Menu'	, 'Binary to Hexadecimal'							 
+insert into MENU_TABLE values ( 0, 100, 150, 6, 'Character Encoding Menu'	, 'Exit'											 
+
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'Common Cryptography Menu'	, 'ISO 8583 Bitmap parser'							 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'Common Cryptography Menu'	, 'Luhn Digit Check Algorithm'						 
+insert into MENU_TABLE values ( 0, 100, 150, 2, 'Common Cryptography Menu'	, 'Exit'											 
+
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'Payments Cryptography Menu'	, 'CVV, dCVV, CVV2, iCVV Handling'		 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'Payments Cryptography Menu'	, 'PIN block encoding and decoding'					 
+insert into MENU_TABLE values ( 0, 100, 150, 2, 'Payments Cryptography Menu'	, 'PIN encryption and decryption'					 
+insert into MENU_TABLE values ( 0, 100, 150, 3, 'Payments Cryptography Menu'	, 'PIN PVV encryption and decoding'					 
+insert into MENU_TABLE values ( 0, 100, 150, 4, 'Payments Cryptography Menu'	, 'Exit'											 
+
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'Europay, MasterCard, Visa Menu', 'VSDC cryptograms (AAC, ARCQ, TC, ARPC)'			 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'Europay, MasterCard, Visa Menu', 'Session key, UDK derivation'						 
+insert into MENU_TABLE values ( 0, 100, 150, 2, 'Europay, MasterCard, Visa Menu', 'Static Data Authentication (SDA)'				 
+insert into MENU_TABLE values ( 0, 100, 150, 3, 'Payments Cryptography Menu'	, 'Dynamic Data Authentication (DDA)'				 
+insert into MENU_TABLE values ( 0, 100, 150, 4, 'Payments Cryptography Menu'	, 'Exit'											 
+
+insert into MENU_TABLE values ( 0, 100, 150, 0, 'HSM Cryptography Menu'		, 'HSM Cryptography Form'							 
+insert into MENU_TABLE values ( 0, 100, 150, 1, 'HSM Cryptography Menu'		, 'Exit'											, 1, 1, 'regressionMenuJSPHref'			, 1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);

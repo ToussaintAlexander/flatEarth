@@ -1,0 +1,174 @@
+TRANSACTION_TYPE_003_ID
+=======================
+insert into CODE_TABLE values( 0,  3, 0, '10', 'Purchase of Goods or Services'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '20', 'Withdrawal/Cash Advance'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '30', 'Cash Check'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '40', 'Deposit (Credit)'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '50', 'Available Funds Inquiry'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '60', 'Transfer'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 0, '70', 'Bill Payments'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+ACCOUNT_FROM_TYPE_003_ID
+========================
+insert into CODE_TABLE values( 0,  3, 1, '10', 'Not Specified'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 1, '20', 'Savings Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 1, '30', 'Checking Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 1, '40', 'Credit Card Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 1, '50', 'Cash Benefits Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+ACCOUNT_TO_TYPE_003_ID
+======================
+insert into CODE_TABLE values( 0,  3, 2, '10', 'Not Specified'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 2, '20', 'Savings Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 2, '30', 'Checking Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 2, '40', 'Credit Card Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  3, 2, '50', 'Cash Benefits Account'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+============================================================================================================================================================
+
+TRANSACTION_ENTRY_MODE_022_ID
+=============================
+insert into CODE_TABLE values( 0,  22,  0, '10', 'Unknown or Terminal Not Used'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '15', 'Manual Key Entry PAN'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '20', 'Magnetic Stripes Read; CVV Checking Possible'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '25', 'Bar Code Reader'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '30', 'IC Cards Read; CVV or iCVV Checking Possible'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '35', 'Contactless Device-Read Using VSDC Chip Data Rules'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '40', 'Store and Forward'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '45', 'MICR Reader'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '50', 'Magnetic Stripe Read including Track 1 and 2'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  0, '55', 'Contactless Device-Read Originated using Mag Stripe'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+PIN_ENTRY_MODE_022_ID
+=====================
+insert into CODE_TABLE values( 0,  22,  1, '1', 'Unknown'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  1, '2', 'POS Terminal Can Accept and Forward Online PIN'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  1, '3', 'POS Terminal Cannot Accept and Forward Online PIN'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  1, '4', 'Terminal PIN Pad is Down'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  22,  1, '5', 'Reserved for Future Use'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+====================================================================================================================================================================================
+
+POINT_OF_SERVICE_CONDITION_CODE_025_ID
+======================================
+insert into CODE_TABLE values( 0,  25,  -1, '10', 'Normal Transaction'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '15', 'Customer Not Present'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '20', 'Unattended Cardholder-Activated Environments PIN Data Present'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '25', 'Merchant Suspicious of Transaction'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '30', 'Customer Present, Card Not Present'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '35', 'Mail/Telephone Order'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '40', 'Customer Identity Verified (Check Acceptance Only)'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '45', 'Suspected Fraud'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '50', 'Representment of Item'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '55', 'Chargeback (validation or advice)'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '60', 'Address/CVV2/Account without Verification'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '65', 'POS Check Original Full Transaction or Adjustment'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '70', 'Chargeback Reversal'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '75', 'Electronic Commerce Request by Public Network'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  25,  -1, '80', 'Card Present, Magnetic Stripe Cannot Be Read'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+====================================================================================================================================================================================================
+
+TRANSACTION_CURRENCY_CODE_049_ID
+================================
+
+insert into CODE_TABLE values( 0,  49,  -1, '036', 'Australia'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  49,  -1, '076', 'Brazil'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  49,  -1, '124', 'Canada'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+====================================================================================================================================================================================================
+
+ADDITIONAL_AMOUNTS_054_ID
+=========================
+
+ACCOUNT_TYPE_054_ID	 
+
+insert into CODE_TABLE values( 0,  54, 0, '10', 'Not Specified'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 0, '20', 'Savings Account'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 0, '30', 'Checking Account'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 0, '40', 'Credit Card Account'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 0, '50', 'Cash Benefits Account'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+AMOUNT_TYPE_054_ID	 
+
+insert into CODE_TABLE values( 0,  54, 1, '10', 'Not Specified'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '20', 'Debit/EBT Account Ledger Balance'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '30', 'Credit Amount remaining'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '40', 'Debit/EBT Account Available Balance'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '50', 'Credit Account Limit'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '60', 'Account Beginning Balance'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 1, '70', 'Amount cashback'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+CURRENCY_CODE_054_ID	
+
+insert into CODE_TABLE values( 0,  54, 2, '840', 'United States of America'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+ACCOUNT_ENTRY_054_ID	C or D
+
+insert into CODE_TABLE values( 0,  54, 3, 'C', 'Credit'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  54, 3, 'D', 'Debit'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+AMOUNT_054_ID		PIC 9(12)
+====================================================================================================================================================================================================
+insert into CODE_TABLE values( 0,  60,  0, '0', 'Unknown'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  0, '1', 'Unattended Terminal (ATM)'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  0, '2', 'Electronic Cash Register'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  0, '0', 'Customer-owned Device'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  0, '1', 'Merchant-owned Device'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  1, '0', 'Unknown'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '1', 'Terminal Not Used'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '2', 'Mgnetic Stripe Read Capability'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '3', 'Bar Code Read Capability'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '4', 'OCR Read Capability'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '5', 'Chip Read Capability'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '6', 'MICR Read Capability'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '7', 'MICR Read and Image-capable'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '8', 'Proximity Read Capability'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  1, '9', 'POS Key-Entry'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  3, '0', 'Chip Capable Terminal Last Read Successful'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  3, '1', 'Chip Capable Terminal Last Read Unsuccessful'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  4, '0', 'Acquirer Card Authentication reliable'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  4, '1', 'Acquirer Card Authentication not reliable'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  5, '0', 'Unknown'								, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '1', 'Telephone Order'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '2', 'Recurring Transaction'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '3', 'Installment Payment'							, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '4', 'Mail Order'								, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '5', 'Secure Electronic Commerce Transaction'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '6', 'Non-authenticated transaction @ 3-D Secure-capable merchant'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '7', 'Non-authenticated transaction @ non 3-D Secure-capable merchant'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '8', 'Transaction that uses data encryption'					, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '9', 'Transaction that has no data protection'				, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '8', 'Subscription transaction'						, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  5, '9', 'Live agent'								, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  6, '0', 'Unknown'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  6, '1', 'Signature'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  6, '2', 'PIN'			, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  6, '3', 'Unattended Terminal'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  6, '4', 'Mail/Phone Order'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into CODE_TABLE values( 0,  60,  7, '0', 'Device Doesnt Support Partial Authorizations; Balances Not Desired'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  7, '1', 'Device Supports Partial Authorizations; Balances Desired'		, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into CODE_TABLE values( 0,  60,  7, '2', 'Device Doesnt Support Partial Authorizations; Balances Desired'	, 'Description', 'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

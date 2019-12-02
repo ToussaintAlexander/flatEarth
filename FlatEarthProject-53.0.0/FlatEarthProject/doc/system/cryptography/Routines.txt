@@ -1,0 +1,152 @@
+Routines  
+
+BP-Tools is a collection of freeware applications for everyday EFT payment transaction service development. 
+BP-Tools currently comprises the following applications: 
+
+BP-CCalc, a Cryptographic Calculator. 
+BP-CardEdit, Thales P3™ files viewer. 
+BP-Emvt, 
+an EMV Analytics Tools.
+
+Card Authentication Verification Value	CAAV
+Terminal Verification Results		TVR
+Address Verification Result Code	AVS
+Card Verification Method		CVM
+Primary Account Number Check Digit	LUHN
+
+============================================================================================================
+
+BP-CCalc Features:
+=================
+Character Encoding Menu
+
+ASCII to EBCDIC 		(and vice versa)
+
+ASCII text to Binary 		(and vice versa)
+ASCII text to Hexadecimal 	(and vice versa)
+
+EBCDIC text to Binary 		(and vice versa)
+EBCDIC text to Hexadecimal 	(and vice versa)
+
+Binary to Hexadecimal 		(and vice versa)
+================================================
+Common Cryptography Menu
+
+ISO 8583 Bitmap parser
+Luhn digit check & generation algorithm
+
+Payments Cryptography Menu
+
+	CVV, dCVV, CVV2 and iCVV generation & validation
+	IPEK and PEK derivation (DUKPT)
+	MAC encryption (ANSI X9.9, X9.19, AS2805, DUKPT)
+	PIN block encoding and decoding (ISO-0, ISO-1, ISO-2, ISO-3, ANSI X9.8, Docutel, Diebold, NCR, ECI-1, ECI-2, ECI-3, ECI-4, IBM 3621, IBM 3624, IBM 4704 Pin Pad, IBM 5906, VISA-1, VISA-2, VISA-3, VISA-4)
+	PIN encryption and decoding (DUKPT)
+	PIN offset encoding and decoding for IBM 3624 Method
+	PIN PVV encryption and decoding
+	VISA Certificates
+	ZKA (German Zentraler Kreditausschuss) session key derivation and PIN block encryption
+
+Europay, MasterCard, Visa Menu 
+
+	EMV 4.1, EMV 4.2, MasterCard, VSDC cryptograms (AAC, ARCQ, TC, ARPC)
+	Session key, UDK derivation
+	Static Data Authentication (SDA)
+	Dynamic Data Authentication (DDA)
+	CAP Token Computation
+	Secure messaging for Issuer scripts (SMI, SMC)
+	VISA HCE keys generator
+
+HSM cryptography 
+
+	Futurex
+		Key encoding/decoding (Futurex modifier, test MFKs)
+		Clear key lookup for all test MFKs
+	SafeNet
+		Key encoding/decoding (Key formats, Variants)
+		Clear key lookup
+	Thales
+		Key encoding/decoding (Thales key scheme, Pairs, Variants)
+		Clear key lookup for all test LMKs
+
+============================================================================================================
+
+Common cryptography
+AES (Advanced Encryption Standard) cipher operations with ECB, CBC, CFB, OFB modes
+Asymmetric cryptography (RSA) - certificate generation, encryption, decryption, signing and validation
+Base64
+DES/3DES cipher operations with ECB, CBC, CFB-8, OFB-8, OFB-64 modes
+Hashing (MD4, MD5, SHA-1, SHA-256, SHA-384, SHA-512, RIPEMD-160, TIGER-192, CRC32, WHIRLPOOL)
+ISO 8583 Bitmap parser
+Secure DEA key generator (64/128/192 bit)
+Key components combination
+Key parity check (odd, even)
+Key verification check (KVC)
+Luhn digit check & generation algorithm
+SSL/TLS certificate generation, validation and viewing
+UUID
+
+============================================================================================================
+
+Payments cryptography
+CVV, dCVV, CVV2 and iCVV generation & validation
+IPEK and PEK derivation (DUKPT)
+MAC encryption (ANSI X9.9, X9.19, AS2805, DUKPT)
+PIN block encoding and decoding (ISO-0, ISO-1, ISO-2, ISO-3, ANSI X9.8, Docutel, Diebold, NCR, ECI-1, ECI-2, ECI-3, ECI-4, IBM 3621, IBM 3624, IBM 4704 Pin Pad, IBM 5906, VISA-1, VISA-2, VISA-3, VISA-4)
+PIN encryption and decoding (DUKPT)
+PIN offset encoding and decoding for IBM 3624 Method
+PIN PVV encryption and decoding
+VISA Certificates
+ZKA (German Zentraler Kreditausschuss) session key derivation and PIN block encryption
+
+============================================================================================================
+
+EMV
+EMV 4.1, EMV 4.2, MasterCard, VSDC cryptograms (AAC, ARCQ, TC, ARPC)
+Session key, UDK derivation
+Static Data Authentication (SDA)
+Dynamic Data Authentication (DDA)
+CAP Token Computation
+Secure messaging for Issuer scripts (SMI, SMC)
+VISA HCE keys generator
+
+============================================================================================================
+
+HSM cryptography
+Futurex
+Key encoding/decoding (Futurex modifier, test MFKs)
+Clear key lookup for all test MFKs
+
+============================================================================================================
+
+SafeNet
+Key encoding/decoding (Key formats, Variants)
+Clear key lookup
+
+============================================================================================================
+
+Thales
+Key encoding/decoding (Thales key scheme, Pairs, Variants)
+Clear key lookup for all test LMKs
+
+============================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

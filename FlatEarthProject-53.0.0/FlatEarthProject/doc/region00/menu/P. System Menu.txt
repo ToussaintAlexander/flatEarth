@@ -1,0 +1,7 @@
+
+System Menu
+
+	Configuration Menu
+	Language Menu
+	Message Menu
+	Security Menu

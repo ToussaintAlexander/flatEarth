@@ -1,0 +1,62 @@
+DROP TABLE TERMINAL_TABLE;
+
+DROP SEQUENCE TERMINAL_TABLE_SEQUENCE;
+
+CREATE TABLE TERMINAL_TABLE 
+(
+   	 ID           								NUMBER(4)    	NOT NULL
+   	 
+	, transaction_Currency_Code 				NUMBER(3)		NOT NULL
+	, transaction_Currency_Exponent 			NUMBER(1)		NOT NULL
+	, cardholder_Portrait_Image 				VARCHAR2(40)		NOT NULL
+	, issuer_Country_Code 						VARCHAR2(3)		NOT NULL
+	, account_Type 								NUMBER(2)		NOT NULL
+	, authorization_Response_Code 				VARCHAR2(2)		NOT NULL
+	, terminal_Verification_Results 			NUMBER(6)		NOT NULL
+	, transaction_Date 							NUMBER(6)		NOT NULL
+	, transaction_Type 							NUMBER(2)		NOT NULL
+	, acquirer_Identifier 						NUMBER(11)		NOT NULL
+	, amount_Authorized 						NUMBER(12)		NOT NULL
+	, other_Amount 								NUMBER(12)		NOT NULL
+	, application_Identifier_Terminal 			NUMBER(16)		NOT NULL
+	, application_Version_Number 				NUMBER(2)		NOT NULL
+	, merchant_Category_Code 					NUMBER(4)		NOT NULL
+	, merchant_Identifier 						VARCHAR2(15)	NOT NULL
+	, terminal_Country_Code 					NUMBER(3)		NOT NULL
+	, terminal_Floor_Limit 						NUMBER(4)		NOT NULL
+	, terminal_Identification 					VARCHAR2(8)		NOT NULL
+	, interface_Device_Serial_Number 			VARCHAR2(8)		NOT NULL
+	, transaction_Time 							NUMBER(6)		NOT NULL
+	, cardholder_Verfication_Method_Results 	NUMBER(3)		NOT NULL
+	, terminal_Type 							NUMBER(1)		NOT NULL
+	, application_Transaction_Counter 			NUMBER(2)		NOT NULL
+	, unpredictable_Number 						NUMBER(4)		NOT NULL
+	, point_Of_Service_Entry_Mode 				NUMBER(1)		NOT NULL
+	, currency_Code 							NUMBER(3)		NOT NULL
+	, currency_Exponent 						NUMBER(1)		NOT NULL
+	, transaction_Sequence_Counter 				NUMBER(4)		NOT NULL
+	, merchant_Name_And_Location 				VARCHAR2(40)	NOT NULL
+	, issuer_Script_Results 					NUMBER(128)		NOT NULL
+	, form_Factor_Indicator 					NUMBER(4)		NOT NULL
+  	
+  	, CREATE_USER								VARCHAR2(8)		NOT NULL
+  	, CREATE_TIMESTAMP							VARCHAR2(26)	NOT NULL
+  	, MODIFY_USER								VARCHAR2(8)		NOT NULL
+  	, MODIFY_TIMESTAMP							VARCHAR2(26)	NOT NULL
+);
+
+ALTER TABLE TERMINAL_TABLE ADD (
+  CONSTRAINT TERMINAL_TABLE_PK PRIMARY KEY (ID));
+
+CREATE SEQUENCE TERMINAL_TABLE_SEQUENCE START WITH 1;
+
+CREATE OR REPLACE TRIGGER TERMINAL_TABLE_TRIGGER 
+BEFORE INSERT ON TERMINAL_TABLE 
+FOR EACH ROW
+
+BEGIN
+  SELECT TERMINAL_TABLE_SEQUENCE.NEXTVAL
+  INTO   :NEW.ID
+  FROM   DUAL;
+END;
+/

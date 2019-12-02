@@ -1,0 +1,28 @@
+
+Issuing Processor Menu
+
+	Editor Menu
+		Element
+		Rule Header
+		Rule Detail
+		
+	Engine Menu			 
+		Backward Chain
+		Forward Chain
+		
+	Explain Menu
+		Single Element
+		Single Header
+		Single Detail
+			 
+		Dual Element
+		Dual Header
+		Dual Detail
+		
+	Range Menu 
+		BinRange
+		CardVerification
+		Domestic Limit
+		Foreign Limit
+
+		 

@@ -1,0 +1,8 @@
+CREATE TABLE  staff_register (
+  `iEmpID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `sStaffName` varchar(60) DEFAULT NULL,
+  `sStaffDept` varchar(45) DEFAULT NULL,
+  `iStaffPhone` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`iEmpID`),
+  UNIQUE KEY `sStaffName` (`sStaffName`)
+)

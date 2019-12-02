@@ -1,0 +1,135 @@
+LetterBean
+
+	public String		association;	
+	public String 		title;
+	public String 		subtitle;
+	public String 		version;
+	public Date 		effectiveDate;
+
+	-------------------------------------------------
+
+	public int		releaseOverview;
+
+		private int		id;
+		private int 		sequence;
+		private Date 		date;
+		private String 		event;
+
+	-------------------------------------------------
+
+	public int 		section;
+
+		private int		id;
+		private int		sequence;
+		private String 		sectionNumber;
+		private String 		sectionTitle;
+
+		private int 		subSection;
+
+			private int		id;
+			private int		sequence;
+			private int 		fieldNumber;
+			private String		fieldName;
+			private String 		description;
+	
+			private int		usage;
+
+				private int		id;
+				private int 		sequence;
+
+				private int 		system;
+
+					private int 		id;
+					private String 		system;
+					private boolean 	testingAvailableImpact;
+					private boolean 	testingRequiredImpact;
+					private boolean 	activationRequiredImpact;
+
+				private int 		region;
+
+					private int 		id;	
+					private String 		region;
+					private boolean 	impact;
+
+				private int 		platform;
+				private int 		processing;
+
+					private int 		id;
+					private String		processing;
+					private boolean 	impact;
+
+				private int 		messageType;
+
+					private int 		id;
+					private String		messageType;
+					private boolean		impact;
+
+				private int 		status;
+
+			private int		fieldEditHeader;
+
+				private int 		id;
+				private int 		sequence;
+				private int 		field;
+				private int 		subfield;
+				private int 		format;
+				private int 		minimumLength;
+				private int 		maximumLength;
+				private int 		encoding;
+				private int 		datatype;
+				private int 		source;
+				private int 		direction;
+				private int 		existence;
+				private int 		change;
+
+				private int		fieldEditDetail;
+
+					private int 		id;
+					private int 		fEHsequence;
+
+					private int 		field;
+					private int 		subfield;
+					private int 		fEDsequence;
+					
+					private int 		sequence;
+					private int 		pointer;
+					private int 		value;
+
+					
+						private int		fieldSubroutine;
+
+							private int 		id;
+							private int 		sequence;
+							private int 		pointer;
+							private int 		value;
+
+	-------------------------------------------------
+	public int 		appendix;
+	
+		private int		id;
+		private int 		sequence;
+
+		private int		validCodes;
+		private int		rejectCodes;
+
+		private int		acronyms;
+	
+			private int		id;
+			private int 		sequence;
+			private String		acronym;
+			private String 		fullName;
+			private String 		description;
+
+		private int		relatedDocuments;
+
+	-------------------------------------------------
+
+	public String		createUser;
+	public Timestamp 	createTimestamp;
+	public String 		modifyUser;
+	public Timestamp 	modifyTimestamp;
+
+
+
+
+

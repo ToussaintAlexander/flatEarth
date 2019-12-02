@@ -1,0 +1,214 @@
+<!-- HEADER -->
+
+<jsp:include page="/include/pageHeader/pageHeader.jsp" />
+
+<!-- Include Core Tags -->
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
+
+<!-- Include Functions Tags -->
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+     
+<!-- Include Format Tags -->
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+     
+<!-- Include SQL Tags -->
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+
+<!-- Include XML Tags -->
+<%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Login Form</title>
+</head>
+
+<body>
+
+	<div id="container" style="width: 630px">
+
+		<!-- TOP BORDER -->
+
+		<div id="header" style="background-color: #FFA500;">
+			<h1 style="margin-bottom: 0;">Consumer Login</h1>
+		</div>
+
+		<!-- LEFT BORDER -->
+
+		<div id="menu"
+			style="background-color: #FFD700; height: 650px; width: 80px; float: left;">
+			<b>Levels</b> <br></br> Screen <br></br> Field <br></br> Function <br></br>
+		</div>
+
+		<!-- CONTENT BODY -->
+
+		<div id="content"
+			style="background-color: #EEEEEE; height: 650px; width: 550px; float: left;">
+
+			<form name="actionForm" action="AuthenticationServlet" method="get">
+
+				<div style="position: absolute; top:70px; left:100px; width:400px; height:25px">
+					<h3>Please Enter Your Credentials:</h3>
+				</div> 
+				
+				<!-- SCREEN DATE -->	
+											
+				<jsp:include page="/include/pageHeader/welcomeDate.jsp" />
+
+				<!-- Flat Earth Logo -->
+
+<!-- 
+				<img src="/images/layout.gif" alt="html img tag example" 266" height="239">
+
+				<img src="../image/art/bassen-interior-st-cunerakerk-rhenen-NG3164-ft.jpg" / >
+
+				<img src="${pageContext.servletContext.contextPath}/image/art/bassen-interior-st-cunerakerk-rhenen-NG3164-ft.jpg" alt=""/>
+-->
+
+				<jsp:include page="/include/pageHeader/Caillebotte.jsp" />
+
+
+				<!-- USERNAME -->
+				
+				<div style="position: absolute; top:230px; left:250px; width:200px; height:25px">
+					Username
+				</div> 
+				
+				<div style="position: absolute; top:230px; left:350px; width:200px; height:25px">
+					<!-- input type="text" name="username" -->
+					
+					<select name="username">
+					
+						<option>TALEXAND</option>
+						<option selected="selected">ARVSINGH</option>
+						<option>MEICHANG</option>
+						<option>MARYDARK</option>
+						<option>EVELIGHT</option>
+						<option>JIMBLACK</option>
+						<option>LMATSUKO</option>
+						<option>MARYSNOW</option>
+						<option>BRADVINE</option>
+						<option>MGOODWIN</option>
+						<option>BANDREWS</option>
+						<option>RGARRETT</option>
+						<option>BDIAMOND</option>
+						<option>DEDWARDS</option>
+						
+					</select> 
+					
+				</div> 
+
+				<!-- PASSWORD -->
+				
+				<div style="position: absolute; top:260px; left:250px; width:200px; height:25px">
+ 					Password
+				</div>
+				
+				<div style="position: absolute; top:260px; left:350px; width:200px; height:25px">
+					<!--  input type="password" name="password" -->
+					
+					<select name="password">
+					
+						<option>Secret0~</option>
+						<option selected="selected">Secret0!</option>
+						<option>Secret0@</option>
+						<option>Secret0#</option>
+						<option>Secret0$</option>
+						<option>Secret0%</option>
+						<option>Secret0^</option>
+						<option>Secret0*</option>
+						<option>Secret0(</option>
+						<option>Secret0-</option>
+						<option>Secret0)</option>
+						<option>Secret0_</option>
+						<option>Secret0+</option>
+						<option>Secret0=</option>
+						
+					</select> 
+					
+				</div>
+				
+				<!-- DOMAIN -->
+				
+				<div style="position: absolute; top:290px; left:250px; width:200px; height:25px">
+ 					Domain:
+				</div>
+				
+				<div style="position: absolute; top:290px; left:350px; width:200px; height:25px">
+				
+					<select name="domain">
+					
+						<option>DEVELOPMENT</option>
+						<option selected="selected">QUALITY</option>
+						<option>OPERATIONS</option>
+						<option>CLIENT</option>
+						<option>SYSTEMS</option>
+						<option>NETWORK</option>
+						<option>TECHNICAL</option>
+						<option>APPLICATIONS</option>
+						<option>BUSINESS</option>
+						<option>MARKETING</option>
+						<option>CUSTOMER</option>
+						<option>PROJECT</option>
+						<option>DATABASE</option>
+						<option>TEMPORARY</option>
+						
+					</select> 
+					
+				</div>
+		
+				<!-- REMEMBER ME -->
+				
+				<div style="position: absolute; top:320px; left:250px; width:200px; height:25px">
+ 					<input type="checkbox" name="rememberMe" value="No"></input> 
+				</div>
+				
+				<div style="position: absolute; top:320px; left:280px; width:500px; height:25px">
+					Remember Me
+				</div> 
+
+				<!-- I FORGOT MY USERNAME/PASSWORD -->
+		
+				<div style="position: absolute; top:350px; left:250px; width:500px; height:25px">
+					<h5><a href="ForgotUsernamePassword.htm">Forgot My Username/Password</a></h5>
+				</div>
+
+				<!-- CREATE MY CONSUMER ACCOUNT -->
+		
+				<div style="position: absolute; top:380px; left:250px; width:500px; height:25px">
+					<h5><a href="CreateConsumerAccount.htm">Create My Consumer Account</a></h5>
+				</div>
+		
+				<!-- BUTTON PANEL -->	
+											
+				<div style="position: absolute; top:450px; left:300px; width:500px; height:25px">
+					<input	type="submit" name="submitAction" value="Login" ></input>	
+				</div> 	
+				
+				<div style="position: absolute; top:450px; left:370px; width:500px; height:25px">
+					<input	type="reset" name="submitAction" value="Reset" ></input>	
+				</div> 	
+				
+				<!-- LINE DELIMITER -->
+				
+				<div style="position: absolute; top:600px; left:120px; width:700px; height:25px">
+					_________________________________________________________
+				</div> 	
+				
+				<!-- VERSION NUMBER -->
+				
+				<div style="position: absolute; top:620px; left:120px; width:700px; height:25px">
+					Version: 1.00
+				</div> 	
+							
+			</form>
+
+		</div>
+
+		<!-- INCLUDE COPYRIGHT -->
+
+		<jsp:include page="/include/pageFooter/copyright.jsp" />
+	</div>
+
+</body>
+</html>

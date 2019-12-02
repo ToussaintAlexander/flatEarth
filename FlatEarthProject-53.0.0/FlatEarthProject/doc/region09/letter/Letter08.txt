@@ -1,0 +1,18 @@
+Subsection 1.0 - first
+
+	Business Overview Field
+
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+	Processor Impact List
+		ID           		NUMBER(4)    	   
+		PROCESSOR		VARCHAR2(30)		Acquirer
+		IMPACT           	NUMBER(1)		Issuer  
+
+
+	Message Impact Screen					20
+		ID           		NUMBER(4)
+		MESSAGE_TYPE		VARCHAR2(30)
+		IMPACT           	NUMBER(1)

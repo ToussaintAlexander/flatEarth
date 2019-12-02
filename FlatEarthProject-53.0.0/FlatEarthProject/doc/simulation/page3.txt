@@ -1,0 +1,22 @@
+
+
+Technical Letter 17.1 Menu
+
+	0100/0110	Authorization Transaction		POS Terminal for Cardholder Purchase Authorization
+
+			DE002 Primary account number (PAN)
+			DE003 Processing Code
+			DE004 Amount, transaction
+			DE014 Expiration date
+			DE018 Merchant Category Code
+			DE019 Acquiring institution (country code)
+			DE022 Point of service entry mode
+			DE025 Point of service condition code
+			DE028 Amount, transaction fee
+			DE035 Track 2 data
+			DE039 Response code
+			DE049 Currency code, transaction
+			DE052 Personal identification number data
+			DE054 Additional amounts
+			DE055 Chip Data				
+

@@ -1,0 +1,13 @@
+
+
+CURRENT_DATE and CURRENT_TIMESTAMP return the current date and time in the session time zone.
+
+SYSDATE and SYSTIMESTAMP return the system date and time - that is, of the system on which the database resides.
+
+If your client session isn't in the same timezone as the server the database is on (or says it isn't anyway, via 
+your NLS settings), mixing the SYS* and CURRENT_* functions will return different values. 
+They are all correct, they just represent different things. It looks like your server is (or thinks it is) in 
+a +4:00 timezone, while your client session is in a +4:30 timezone.
+
+You might also see small differences in the time if the clocks aren't synchronised, which doesn't seem to be an 
+issue here.

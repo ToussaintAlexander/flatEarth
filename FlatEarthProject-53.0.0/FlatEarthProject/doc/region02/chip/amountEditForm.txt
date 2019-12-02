@@ -1,0 +1,30 @@
+Edit Amount Form
+
+Edit Cardholder List: 		Date: Sun Sep 16 15:31:59 EDT 2018 
+
+Account: 9999999999999999	Sequence: 99
+
+Curency-Related
+==================================
+Pri Appl Curr Code : 999
+Sec Appl Curr Code : 999
+Conv Factor	   : 99999999
+Exp Appl	   : 9
+
+PIN Related
+===============================
+Encrypted PIN		: 9999
+PIN Try Counter		: 99
+
+Consecutive Domestic Offline	Consecutive Intl Offline
+============================	========================
+Counter		:  9		Counter		:  9
+Lower Limit	:  9		Lower Limit	:  9
+Higher Limit	:  9		Higher Limit	:  9
+
+Cum Total Domestic Trans Amt	Cum Total Intl Trans Amt
+============================	============================
+Amount		:  999999999	Amount		:  999999999
+Lower Limit	:  999999999	Lower Limit	:  999999999
+Higher Limit	:  999999999	Higher Limit	:  999999999
+

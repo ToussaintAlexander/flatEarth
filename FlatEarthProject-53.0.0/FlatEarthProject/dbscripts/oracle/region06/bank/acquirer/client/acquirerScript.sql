@@ -1,0 +1,12 @@
+delete from ACQUIRER_TABLE;
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0000', 'BIC0000', 450000, 'Royal Bank of Canada'	, '130 Centre Street'			, 'Meadow Lake'		, 'Saskatchewan'		,'124'	,'4738'		,'3062365623' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0100', 'BIC0100', 450100, 'Bank of China'			, '1 Fuxingmennei Street'		, 'Beijing'			, 'Hebei Province'		,'156'	,'100818'	,'4006695566' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0200', 'BIC0200', 450200, 'BNP Paribas'				, 'Boulevard des Italiens'		, 'Paris'			, 'Île-de-France'		,'250'	,'94104'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0300', 'BIC0300', 450300, 'Deutsche Bank'			, 'Deutsche Bank Twin Towers'	, 'Frankfurt'		, 'Hesse State'			,'276'	,'60262'	,'8662493302' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0400', 'BIC0400', 450400, 'Bank of India' 			, 'Bandra Kurla Complex'		, 'Mumbai'			, 'Maharashtra State'	,'356'	,'40051'	,'2266684444' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0500', 'BIC0500', 450500, 'Banco Popolare' 			, 'Piazza Nogara 2'				, 'Verona'			, 'Veneto Province'		,'380'	,'37121'	,'0342528111' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0600', 'BIC0600', 450600, 'BBVA Bancomer' 			, 'Avenida Universidad'			, 'Mexico City'		, 'Querétaro'			,'484'	,'03339'	,'556213434'  ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0700', 'BIC0700', 450700, 'Sberbank of Russia' 		, '19 Vavilova Street'			, 'Moscow'			, 'Moscow Oblast'		,'643'	,'03339'	,'556213434'  ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0800', 'BIC0800', 450800, 'HSBC Holdings PLC'		, 'HSBC Tower'					, 'London'			, 'London Region'		,'826'	,'00000'	,'8005551212' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into ACQUIRER_TABLE values ( 0, 'IBAN0900', 'BIC0900', 450900, 'JP Morgan Chase Bank' 	, '270 Park Avenue'				, 'New York City'	, 'New York State'		,'840'	,'10017'	,'2122700589' ,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+commit;

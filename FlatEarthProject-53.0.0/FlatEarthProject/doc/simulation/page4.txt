@@ -1,0 +1,41 @@
+Processing Code (bit 3)   
+
+The Processing Code field specifically defines the action to be taken with the message as well as the type of 
+account affected. Values for Bit 3 are as follows:
+
+Positions 1 and 2 – Describes the transaction type (NP2)
+
+Code	Description
+
+00 Purchase of Goods and/or Services (also Card Verification)
+01 Cash Withdrawal
+03 Check Acceptance, POS Check Guarantee with Conversion
+04 POS Check Verification with Conversion
+18 POS Check Conversion Only
+20 Return
+30 Balance Inquiry
+50 Bill Payment
+70 PIN Translation for card activation (only valid for PIN Translation message types)
+71 PIN Translation for card authorization (only valid for PIN Translation message types)
+
+Positions 3 and 4 – Describes the Account Type (“from” account type for transfers) (NP2)
+
+00 Default (also referred to as “Primary” or “Funding” Account)
+96 Cash Benefit Account (EBT only)
+98 Food Stamp Account (EBT only)
+
+Positions 5 and 6 – Describes the Account Type (“to” account type for transfers) (NP2)
+
+00 Default (also referred to as “Primary” or “Funding” Account)
+96 Cash Benefit Account (EBT only)
+98 Food Stamp Account (EBT only)
+
+
+
+
+
+
+
+
+
+

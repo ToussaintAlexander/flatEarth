@@ -1,0 +1,29 @@
+
+Main Menu
+
+	Cardholder Menu
+	Bank Menu
+	Card Menu
+	Merchant Menu
+	Processor Menu
+	Association Menu
+
+<a href="applicationForm">Add Application</a>
+<a href="viewApplication">View Applications</a>
+
+<br></br>
+	
+
+  	<h1>Main Menu</h1>
+
+	<a href="cardholderMenu">Cardholder Menu</a>
+	<br>
+	<a href="bankMenu">Bank Menu</a>
+	<br>
+	<a href="cardMenu">Card Menu</a>
+	<br>
+	<a href="merchantMenu">Merchant Menu</a>
+	<br>
+	<a href="processorMenu">Processor Menu</a>
+	<br>
+	<a href="associationMenu">Association Menu</a>

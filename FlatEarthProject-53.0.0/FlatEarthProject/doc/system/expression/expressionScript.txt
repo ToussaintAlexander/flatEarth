@@ -1,0 +1,149 @@
+-- *****************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values ( 001 , 'GENERIC_SCREEN','CREATE_USER_FIELD'     ,'DUMMY','^[a-zA-Z]{6,8}$',3,'UNASSIGNED',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (110,'GENERIC_SCREEN','CREATE_TIMESTAMP_FIELD'   ,'DUMMY',
+'^((((19|20)([2468][048]|[13579][26]|0[48])|2000)-02-29|((19|20)[0-9]{2}-(0[4678]|1[02])-(0[1-9]|[12][0-9]|30)|(19|20)[0-9]{2}-(0[1359]|11)-(0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}-02-(0[1-9]|1[0-9]|2[0-8])))\s([01][0-9]|2[0-3]):([012345][0-9]):([012345][0-9]))$'
+,3,'2014-12-31 12:59:59',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (120,'GENERIC_SCREEN','MODIFY_USER_FIELD'        ,'DUMMY','^[a-zA-Z]{6,8}$',3,'UNASSIGNED',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (130,'GENERIC_SCREEN','MODIFY_TIMESTAMP_FIELD'   ,'DUMMY',
+'^((((19|20)([2468][048]|[13579][26]|0[48])|2000)-02-29|((19|20)[0-9]{2}-(0[4678]|1[02])-(0[1-9]|[12][0-9]|30)|(19|20)[0-9]{2}-(0[1359]|11)-(0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}-02-(0[1-9]|1[0-9]|2[0-8])))\s([01][0-9]|2[0-3]):([012345][0-9]):([012345][0-9]))$'
+,3,'2014-12-31 12:59:59',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (140,'GENERIC_SCREEN'   , 'USERNAME_FIELD'       ,'DUMMY','^[a-zA-Z0-9]{6,8}$',3                                    ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);				 
+insert into EXPRESSION_TABLE values (150,'GENERIC_SCREEN'   , 'PASSWORD_FIELD'	     ,'DUMMY','^((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%]).{6,20})$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+-- *********************************************************************************************************************************************************************************************************************************** 
+insert into EXPRESSION_TABLE values (200,'ACCOUNT_SCREEN'   ,'ACCOUNT_ID_FIELD'      ,'DUMMY','^[0-9]{2}$'   ,3  ,'00'                ,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (210,'ACCOUNT_SCREEN'   ,'CARD_NUMBER_FIELD'     ,'DUMMY','^[x,0-9]{16}$',1  ,'0000000000000000'  ,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (220,'ACCOUNT_SCREEN'   ,'SECURITY_CODE_FIELD'   ,'DUMMY','^[0-9]{3}$'   ,3  ,'000'               ,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (230,'ACCOUNT_SCREEN'   ,'EXPIRATION_DATE_FIELD' ,'DUMMY',
+'^((((19|20)([2468][048]|[13579][26]|0[48])|2000)-02-29|((19|20)[0-9]{2}-(0[4678]|1[02])-(0[1-9]|[12][0-9]|30)|(19|20)[0-9]{2}-(0[1359]|11)-(0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}-02-(0[1-9]|1[0-9]|2[0-8])))\s([01][0-9]|2[0-3]):([012345][0-9]):([012345][0-9]))$'	
+,3,'2014-12-31 12:59:59',1,'TALEXAND' ,CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (240,'ACCOUNT_SCREEN','AMOUNT_FIELD'             ,'DUMMY' ,'\d+(\.\d{2})?'           ,1  ,'0000000.00',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+-- *********************************************************************************************************************************************************************************************************************************** 
+insert into EXPRESSION_TABLE values (245,'BATCH_SCREEN'   ,'BATCH_ID_FIELD'       ,'DUMMY','^[0-9]{1,4}$'   	,3  ,'9999' 			,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (250,'BATCH_SCREEN'   ,'BATCH_KEY_FIELD'      ,'DUMMY','^[a-zA-Z]{3,10}$'   ,3  ,'BATCH' 			,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (260,'BATCH_SCREEN'   ,'CONTEXT_FILE_FIELD'   ,'DUMMY','^[a-zA-Z.-]{3,75}$'	,3  ,'context.xml'  	,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (270,'BATCH_SCREEN'   ,'DATABASE_CONFIG_FIELD','DUMMY','^[a-zA-Z.-]{3,75}$' ,3  ,'database.xml'     ,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (280,'BATCH_SCREEN'	  ,'JOB_REPORT_FIELD'     ,'DUMMY','^[a-zA-Z.-]{3,75}$' ,3  ,'job-report.xml'	,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (285,'BATCH_SCREEN'   ,'REPORT_JOB_FIELD'	  ,'DUMMY','^[a-zA-Z0-9.-]{3,75}$' ,3  ,'inCsvFile'        ,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (290,'BATCH_SCREEN'	  ,'JOB_LAUNCHER_FIELD'   ,'DUMMY','^[a-zA-Z0-9._]{3,75}$' ,3  ,'databaseLoc'  	,1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+-- ********************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (300,'CUSTOMER_SCREEN'  ,'CUSTOMER_ID_FIELD'     ,'DUMMY' ,'^[0-9]{3}$'              ,3 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (310,'CUSTOMER_SCREEN'  ,'FIRST_NAME_FIELD'      ,'DUMMY' ,'^[a-zA-Z]{3,15}$'        ,3 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (320,'CUSTOMER_SCREEN'  ,'LAST_NAME_FIELD'       ,'DUMMY' ,'^[a-zA-Z]{3,20}$'        ,3 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (330,'CUSTOMER_SCREEN'  ,'STREET_FIELD' 	     ,'DUMMY' ,'^[\d]+[A-Za-z0-9\s,\.]+$',2 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (340,'CUSTOMER_SCREEN'  ,'CITY_FIELD' 	         ,'DUMMY' ,'^[a-zA-Z]{3,15}$'        ,2 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (350,'CUSTOMER_SCREEN'  ,'STATE_FIELD'           ,'DUMMY' ,'^[a-zA-Z]{2}$'           ,2 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (360,'CUSTOMER_SCREEN'  ,'COUNTRY_FIELD'         ,'DUMMY' ,'^[a-zA-Z ]{3,15}$'       ,2 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (370,'CUSTOMER_SCREEN'  ,'ZIP_CODE_FIELD'        ,'DUMMY' ,'^\d{5}(-\d{4})?$'        ,3 ,'UNASSIGNED' ,1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (380,'CUSTOMER_SCREEN'  ,'EMAIL_FIELD' 	         ,'DUMMY'	,'^[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$',3,'UNASSIGNED',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+-- **************************************************************************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (400,'EXPRESSION_SCREEN','EXPRESSION_ID_FIELD'   ,'DUMMY' ,'^[0-9]{3}$'          ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (410,'EXPRESSION_SCREEN','SCREEN_NAME_FIELD' 	 ,'DUMMY' ,'^[a-zA-Z_]{3,25}$'   ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (420,'EXPRESSION_SCREEN','FIELD_NAME_FIELD' 	 ,'DUMMY' ,'^[a-zA-Z_]{3,20}$'   ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (430,'EXPRESSION_SCREEN','FIELD_VALUE_FIELD' 	 ,'DUMMY' ,'^[a-zA-Z@0-9]{3,20}$',2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (440,'EXPRESSION_SCREEN','EXPRESSION_FIELD' 	 ,'DUMMY' ,'^.{1,}+$'            ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (450,'EXPRESSION_SCREEN','RATING_FIELD' 	     ,'DUMMY' ,'^1|2|3$'             ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (460,'EXPRESSION_SCREEN','DEFAULT_VALUE_FIELD'   ,'DUMMY' ,'^[a-zA-Z@0-9]{3,20}$',2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+-- **************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (700,'LOGGER_SCREEN'    , 'LOGGER_ID_FIELD'		        ,'DUMMY','^[0-9]{2}$'                       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);				  			 
+insert into EXPRESSION_TABLE values (702,'LOGGER_SCREEN'    , 'LOGGER_NAME_FIELD'	        ,'DUMMY','^[a-zA-Z]{3,60}$'                 ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (704,'LOGGER_SCREEN'    , 'HANDLER_TYPE_FIELD'	        ,'DUMMY','^CONSOLE|XML|HTML|MEMORY|ROLLING|STREAM|SOCKET$',3       ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (706,'LOGGER_SCREEN'    , 'FILE_HANDLER_FIELD'          ,'DUMMY','^[a-zA-Z]{14,20}$'                ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (708,'LOGGER_SCREEN'    , 'SERVER_NAME_FIELD'	        ,'DUMMY','^LOCAL|REMOTE|BACKUP$'            ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (710,'LOGGER_SCREEN'    , 'PORT_NUMBER_FIELD'	        ,'DUMMY','^[0-9]{4}$'                       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (712,'LOGGER_SCREEN'    , 'OUTPUT_STREAM_FIELD'	        ,'DUMMY','^[a-zA-Z]{10}$'                   ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (714,'LOGGER_SCREEN'    , 'FILE_NAME_PATTERN_FIELD'	    ,'DUMMY','^[a-zA-Z]{3,60}$'                 ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (716,'LOGGER_SCREEN'    , 'FILE_APPEND_FIELD'	        ,'DUMMY','^Y|NO$'                         ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (718,'LOGGER_SCREEN'    , 'MAXIMUM_DISK_FILES_FIELD'    ,'DUMMY','^[0-9]{2}$'                       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (720,'LOGGER_SCREEN'    , 'FILE_LIMIT_SIZE_FIELD'	    ,'DUMMY','^[0-9]{1}$'                       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (722,'LOGGER_SCREEN'    , 'MAXIMUM_RECORD_BUFFER_FIELD' ,'DUMMY','^[0-9]{2}$'                       ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (724,'LOGGER_SCREEN'    , 'FILTER_CODE_FIELD'	        ,'DUMMY','^MESSAGE|PRIMITIVE|OBJECT$'       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (726,'LOGGER_SCREEN'    , 'FILTER_VALUE_FIELD'	        ,'DUMMY','^[0-9a-zA-Z]{1,30}$'              ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (728,'LOGGER_SCREEN'    , 'PUSH_LEVEL_FIELD'	        ,'DUMMY','^ALL|CONFIG|FINE|FINER|FINEST|INFO|OFF|SEVERE|WARNING$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (730,'LOGGER_SCREEN'    , 'SOURCE_CLASS_FIELD'	        ,'DUMMY','^[a-zA-Z]{3,20}$'                 ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (732,'LOGGER_SCREEN'    , 'SOURCE_METHOD_NAME_FIELD'    ,'DUMMY','^[a-zA-Z]{3,20}$'                 ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (734,'LOGGER_SCREEN'    , 'RESOURCE_BUNDLE_FIELD'	    ,'DUMMY','^DATABASE|ENVIRONMENT|PROPERTIES$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (736,'LOGGER_SCREEN'    , 'FORMAT_CODE_FIELD'	        ,'DUMMY','^PLAIN|XML|HTML|UNKNOWN$'         ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+-- ********************************************************************************************************************************************************************************************************************* 
+insert into EXPRESSION_TABLE values (740,'MESSAGE_SCREEN'   , 'MESSAGE_ID_FIELD'    ,'DUMMY','^[0-9]{3}$' ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (742,'MESSAGE_SCREEN'   , 'TYPE_ID_FIELD'	    ,'DUMMY','^[0-9]{1}$' ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (744,'MESSAGE_SCREEN'   , 'CLASSIFICATION_FIELD','DUMMY','^[0-9]{1}$' ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (746,'MESSAGE_SCREEN'   , 'DESCRIPTION_FIELD' ,'DUMMY','^([a-zA-Z.\[\]]{1}[a-zA-Z.\[\]]*[\s]{0,1}[a-zA-Z.\[\]])+([\s]{0,1}[a-zA-Z.\[\]]+)$' ,3 ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (748,'MESSAGE_SCREEN'   , 'CAUSE_FIELD'	      ,'DUMMY','^([a-zA-Z.\[\]]{1}[a-zA-Z.\[\]]*[\s]{0,1}[a-zA-Z.\[\]])+([\s]{0,1}[a-zA-Z.\[\]]+)$' ,3 ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (750,'MESSAGE_SCREEN'   , 'EFFECT_FIELD'	  ,'DUMMY','^([a-zA-Z.\[\]]{1}[a-zA-Z.\[\]]*[\s]{0,1}[a-zA-Z.\[\]])+([\s]{0,1}[a-zA-Z.\[\]]+)$' ,3 ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (752,'MESSAGE_SCREEN'   , 'RECOVERY_FIELD'	  ,'DUMMY','^([a-zA-Z.\[\]]{1}[a-zA-Z.\[\]]*[\s]{0,1}[a-zA-Z.\[\]])+([\s]{0,1}[a-zA-Z.\[\]]+)$' ,3 ,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+-- **********************************************************************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (800,'PASSWORD_SCREEN'  , 'GROUP_ID_FIELD'	            ,'DUMMY','^[0-9]{1,3}$'         ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);						 
+insert into EXPRESSION_TABLE values (805,'PASSWORD_SCREEN'  , 'USER_ID_FIELD'	            ,'DUMMY','^[0-9]{1,2}$'         ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);				 
+insert into EXPRESSION_TABLE values (810,'PASSWORD_SCREEN'  , 'SEQUENCE_FIELD'	            ,'DUMMY','^[0-9]{1,2}$'         ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);					 
+insert into EXPRESSION_TABLE values (815,'PASSWORD_SCREEN'  , 'DOMAIN_FIELD'	            ,'DUMMY','^[a-zA-Z]{3,20}$'     ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+insert into EXPRESSION_TABLE values (820,'PASSWORD_SCREEN'  , 'REMEMBER_ME_FIELD'	        ,'DUMMY','^Y|NO$'             ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);					 
+insert into EXPRESSION_TABLE values (825,'PASSWORD_SCREEN'  , 'COMPUTER_NAME_FIELD'	        ,'DUMMY','^[a-zA-Z]{8,10}$'     ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+insert into EXPRESSION_TABLE values (830,'PASSWORD_SCREEN'  , 'PASSWORD_TYPE_FIELD'	        ,'DUMMY','^[0-9]{1}$'          ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+insert into EXPRESSION_TABLE values (835,'PASSWORD_SCREEN'  , 'FIRST_NAME_FIELD'	        ,'DUMMY','^[a-zA-Z]{3,20}$'     ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+insert into EXPRESSION_TABLE values (840,'PASSWORD_SCREEN'  , 'LAST_NAME_FIELD'	            ,'DUMMY','^[a-zA-Z]{3,20}$'     ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);	
+
+insert into EXPRESSION_TABLE values (845,'PASSWORD_SCREEN'  , 'ACCOUNT_STATUS_FIELD'	    ,'DUMMY','^[0-9]{1}$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+
+insert into EXPRESSION_TABLE values (850,'PASSWORD_SCREEN','LAST_ACCESS_FIELD','DUMMY',
+'^((((19|20)([2468][048]|[13579][26]|0[48])|2000)-02-29|((19|20)[0-9]{2}-(0[4678]|1[02])-(0[1-9]|[12][0-9]|30)|(19|20)[0-9]{2}-(0[1359]|11)-(0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}-02-(0[1-9]|1[0-9]|2[0-8])))\s([01][0-9]|2[0-3]):([012345][0-9]):([012345][0-9]))$'
+,3,'2014-12-31 12:59:59',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (855,'PASSWORD_SCREEN','PASSWORD_CHANGE_FIELD','DUMMY',
+'^((((19|20)([2468][048]|[13579][26]|0[48])|2000)-02-29|((19|20)[0-9]{2}-(0[4678]|1[02])-(0[1-9]|[12][0-9]|30)|(19|20)[0-9]{2}-(0[1359]|11)-(0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}-02-(0[1-9]|1[0-9]|2[0-8])))\s([01][0-9]|2[0-3]):([012345][0-9]):([012345][0-9]))$'
+,3,'2014-12-31 12:59:59',1,'TALEXAND',CURRENT_TIMESTAMP,'TALEXAND',CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (860,'PASSWORD_SCREEN'  , 'PASSWORD_ATTEMPTS_FIELD'     ,'DUMMY','^[0-9]{1}$'          ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);			 
+-- ********************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (890,'PRODUCT_SCREEN'   , 'PRODUCT_ID_FIELD'             ,'DUMMY', '^[0-9]{2}$'               ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (895,'PRODUCT_SCREEN'   , 'DESCRIPTION_FIELD'  	         ,'DUMMY', '^[a-zA-Z ]{3,30}$'        ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (900,'PRODUCT_SCREEN'   , 'PRICE_FIELD'  	             ,'DUMMY', '^[0-9]+([,.][0-9]{1,2})?$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+-- ***************************************************************************************************************************************************************************************************************
+insert into EXPRESSION_TABLE values (902,'PROPERTIES_SCREEN', 'PROPERTIES_ID_FIELD'          ,'DUMMY', '^[0-9]{2}$'               ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (905,'PROPERTIES_SCREEN', 'PROPERTIES_FILE_FIELD'     ,'DUMMY', 
+'^(([a-zA-Z]:|\\)\\)?(((\.)|(\.\.)|([^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?))\\)*[^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?$'                  
+,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (907,'PROPERTIES_SCREEN', 'DEFAULT_PROPERTIES_FIELD'     ,'DUMMY', 
+'^(([a-zA-Z]:|\\)\\)?(((\.)|(\.\.)|([^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?))\\)*[^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?$'                  
+,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (908,'PROPERTIES_SCREEN', 'PROPERTIES_LOCATION_FIELD'    ,'DUMMY', 
+'^(([a-zA-Z]:|\\)\\)?(((\.)|(\.\.)|([^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?))\\)*[^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?$' 
+,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (910,'PROPERTIES_SCREEN', 'INPUT_FILE_NAME_FIELD'        ,'DUMMY', '[^\s]+(\.(?i)(txt|png|gif|bmp))$'     ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (915,'PROPERTIES_SCREEN', 'OUTPUT_FILE_NAME_FIELD'       ,'DUMMY', '[^\s]+(\.(?i)(txt|png|gif|bmp))$'     ,2,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (917,'PROPERTIES_SCREEN', 'XML_FORMAT_FIELD'             ,'DUMMY', '^Yes|No$'                             ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+
+insert into EXPRESSION_TABLE values (920,'PROPERTIES_SCREEN', 'ENCODING_FIELD'               ,'DUMMY', '^US-ASCII|UTF-8|EBCDIC|UTF-16|UTF-32$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (925,'PROPERTIES_SCREEN', 'PATH_FIELD'                   ,'DUMMY', '^[a-zA-Z0-9]{3,10}$'                  ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (930,'PROPERTIES_SCREEN', 'FILE_FIELD'                   ,'DUMMY', '^[a-zA-Z0-9]{3,10}$'                  ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (940,'PROPERTIES_SCREEN', 'FILE_INPUT_STREAM_FIELD'      ,'DUMMY', 
+'^(([a-zA-Z]:|\\)\\)?(((\.)|(\.\.)|([^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?))\\)*[^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?$' 
+,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (945,'PROPERTIES_SCREEN', 'FILE_OUTPUT_STREAM_FIELD'    ,'DUMMY', 
+'^(([a-zA-Z]:|\\)\\)?(((\.)|(\.\.)|([^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?))\\)*[^\\/:\*\?"\|<>\. ](([^\\/:\*\?"\|<>\. ])|([^\\/:\*\?"\|<>]*[^\\/:\*\?"\|<>\. ]))?$' 
+,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (950,'PROPERTIES_SCREEN', 'DRIVER_NAME_FIELD'           ,'DUMMY', '^([^\.]+).([^\.]+).([^\.]+).([^\.]+)$',3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (955,'PROPERTIES_SCREEN', 'SERVER_NAME_FIELD'           ,'DUMMY', '^[a-zA-Z]{3,20}$' ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (960,'PROPERTIES_SCREEN', 'PORT_NUMBER_FIELD'           ,'DUMMY', '^[0-9]{4}$'       ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+insert into EXPRESSION_TABLE values (965,'PROPERTIES_SCREEN', 'SID_FIELD'                   ,'DUMMY', '^[a-zA-Z]{2,10}$' ,3,'UNASSIGNED',1,'TALEXAND', CURRENT_TIMESTAMP, 'TALEXAND', CURRENT_TIMESTAMP);
+commit;
